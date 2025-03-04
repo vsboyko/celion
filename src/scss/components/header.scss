@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  padding: 35rem 0;
+  font-size: var(--fs-12);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__inner {
+  }
+  &__logo {
+    max-width: 204rem;
+    flex-shrink: 0;
+    top: 2rem;
+  }
+  &__toggle {
+  }
+  &__dropdown {
+    margin: 0 0 0 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+  }
+  &__nav {
+    margin: 8rem 2.9% 0 0;
+    flex-grow: 1;
+  }
+  &__btn-group {
+  }
+}

@@ -1,0 +1,84 @@
+$siteResolution: 1px;
+$mainFont: 'Gilroy';
+$mainWeight: 400;
+$lineHeight1: 1.6;
+$lineHeight2: 1.16;
+$lineHeight3: 1.3846;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 1500rem;
+
+$gap: 30rem;
+$gapFluid: 60rem;
+
+$radiusSm: 5rem;
+$radiusMd: 12rem;
+$radiusXl: 40rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$greyColor: #E4E4E4;
+$blueColor: #2D5DFF;
+$blueNeutralColor: #3A59FC;
+$purpleColor: #F51AD6;
+$redColor: #F02121;
+$accentColor: $redColor;
+
+$gradientAccent1: linear-gradient(130deg, $blueColor -2%, $purpleColor 118%);
+$gradientBlack1: linear-gradient(180deg, $blackColor 0%, rgba($blackColor, 0) 100%);
+
+$boxShadowWhite1: 0 0 60px rgba($whiteColor, .5);
+
+$bgSite: $blackColor;
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $whiteColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 20rem;
+  --fs-1: 140rem;
+  --fs-2: 100rem;
+  --fs-3: 82rem;
+  --fs-4: 80rem;
+  --fs-5: 70rem;
+  --fs-6: 48rem;
+  --fs-7: 32rem;
+  --fs-8: 30rem;
+  --fs-9: 24rem;
+  --fs-10: 22rem;
+  --fs-11: 20rem;
+  --fs-12: 18rem;
+  --fs-13: 16rem;
+  --fs-14: 14rem;
+  --fs-15: 118rem;
+  --fs-16: 26rem;
+
+  --gap: 30rem;
+  --gap-: -30rem;
+  --gap-fluid: 60rem;
+  --gap-fluid-: -60rem;
+  --gap-container: var(--gap);
+  --gap-container-: var(--gap-);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+  }
+}
