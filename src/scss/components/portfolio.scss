@@ -1,0 +1,30 @@
+.portfolio {
+  padding: var(--section-y) 0;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 132rem;
+  }
+  &__list {
+    margin-bottom: 80rem;
+    &-row {
+      margin-bottom: -40rem;
+    }
+    &-col {
+      margin-bottom: 40rem;
+    }
+    &-card {
+    }
+  }
+  &__footer {
+    text-align: center;
+    &-btn {
+      width: 100%;
+      font-weight: 500;
+      @media (min-width: $sm-mf) {
+        width: auto;
+        min-width: 438rem;
+      }
+    }
+  }
+}

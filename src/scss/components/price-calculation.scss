@@ -1,0 +1,31 @@
+.price-calculation {
+  padding: var(--section-y) 0;
+  &__container {
+  }
+  &__title {
+    max-width: 1230rem;
+    margin: 0 0 -20rem;
+    .word-accent {
+      margin: 0 .8ch;
+    }
+  }
+  &__description {
+    max-width: 800rem;
+    margin: 0 0 50rem auto;
+    font-weight: 500;
+    font-size: var(--fs-17);
+    line-height: $lineHeight6;
+    text-align: right;
+  }
+  &__footer {
+    text-align: right;
+    &-btn {
+      width: 100%;
+      font-weight: 500;
+      @media (min-width: $sm-mf) {
+        width: auto;
+        min-width: 438rem;
+      }
+    }
+  }
+}

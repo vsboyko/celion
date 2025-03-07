@@ -13,14 +13,14 @@ body {
 
 body {
   background: $bgSite;
-  // background: url(../images/proba.jpg) center top no-repeat;
-  opacity: .4;
+  // background: url(../images/proba.jpg) center top $bgSite no-repeat;
   font-style: normal;
   font-weight: $mainWeight;
   font-size: var(--fs-default);
   line-height: $lineHeightDefault;
   font-family: $fontFamily;
   color: $fontColor;
+  // opacity: .4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

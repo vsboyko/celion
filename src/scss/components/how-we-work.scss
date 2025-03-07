@@ -1,0 +1,19 @@
+.how-we-work {
+  padding: 278rem 0 var(--section-y);
+  &__container {
+  }
+  &__title {
+    margin: 0 0 80rem;
+  }
+  &__list {
+    counter-reset: stepCounter;
+    &-row {
+    }
+    &-col {
+      counter-increment: stepCounter;
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.benefits {
+  padding: var(--section-y) 0;
+  &__container {
+  }
+  &__header {
+      max-width: 770rem;
+  }
+  &__title {
+    margin: 0 0 14rem;
+    @media (min-width: $lg-mf) {
+      font-size: var(--fs-3);
+      line-height: 1.24390243902;
+    }
+    strong {
+      white-space: nowrap;
+    }
+  }
+  &__description {
+    margin: 0;
+    font-weight: 500;
+    line-height: $lineHeight4;
+  }
+  &__row {
+    margin-bottom: var(--gap-fluid-);
+  }
+  &__col {
+    margin-bottom: var(--gap-fluid);
+    display: flex;
+    flex-direction: column;
+    &--header {
+    }
+    &--card {
+    }
+    &--header + &--card {
+      .benefits-card {
+        height: auto;
+        margin-top: auto;
+      }
+    }
+  }
+  &__card {
+    height: 100%;
+  }
+}

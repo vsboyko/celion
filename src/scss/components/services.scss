@@ -1,0 +1,18 @@
+.services {
+  padding: var(--section-y) 0;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 30rem;
+    .word-accent {
+    }
+  }
+  &__description {
+    max-width: 1200rem;
+    margin: 0 0 80rem;
+    font-weight: 500;
+    font-size: var(--fs-8);
+    line-height: $lineHeight7;
+    color: rgba($whiteColor, .8);
+  }
+}
