@@ -1,0 +1,38 @@
+.advantages {
+  padding: var(--section-y) 0;
+  position: relative;
+  @media (max-width: $md) {
+  }
+  &:before,
+  &:after {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &__planet {
+    &--1 {
+      top: -10rem;
+      left: 30rem;
+      opacity: .8;
+    }
+  }
+  &__container {
+  }
+  &__title {
+  }
+  &__list {
+    @media (max-width: $md) {
+      margin-bottom: var(--gap-container-);
+    }
+    &-col {
+      @media (max-width: $md) {
+        max-width: 100%;
+        margin-bottom: var(--gap-container);
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

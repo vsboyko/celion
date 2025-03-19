@@ -1,17 +1,51 @@
 .portfolio {
   padding: var(--section-y) 0;
+  position: relative;
+  @media (max-width: $md) {
+    order: -8;
+  }
+  &__bg {
+    width: 1920rem;
+    padding-bottom: 1px;
+    top: -340rem;
+    transform: translate(-50%, 0);
+  }
+  &__decor {
+    z-index: -18;
+    &--1 {
+      width: 2270rem;
+      margin: 128rem 0 0 940rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
   &__container {
   }
   &__title {
     margin: 0 0 132rem;
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
   }
   &__list {
     margin-bottom: 80rem;
+    @media (max-width: $md) {
+      margin-bottom: 40rem;
+    }
     &-row {
       margin-bottom: -40rem;
+      @media (max-width: $md) {
+        margin-bottom: var(--title-y-md-);
+      }
     }
     &-col {
       margin-bottom: 40rem;
+      @media (max-width: $md) {
+        max-width: 100%;
+        margin-bottom: var(--title-y-md);
+        flex-basis: 100%;
+      }
     }
     &-card {
     }

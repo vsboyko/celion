@@ -25,6 +25,8 @@ $blackColor: #000000;
 $greyColor: #E4E4E4;
 $greyMediumColor: #A4A4A4;
 $greyLightColor: #E9E9E9;
+$greyNeutralColor: #E2E2E2;
+$greyNormalColor: #ECECEC;
 $blueColor: #2D5DFF;
 $blueNeutralColor: #3A59FC;
 $purpleColor: #F51AD6;
@@ -36,6 +38,7 @@ $accentColor: $blueColor;
 $gradientAccent1: linear-gradient(130deg, $blueColor -2%, $purpleColor 118%);
 $gradientBlack1: linear-gradient(180deg, $blackColor 0%, rgba($blackColor, 0) 100%);
 $gradientBlack2: linear-gradient(0deg, $blackColor 1%, rgba($blackColor, 0) 100%);
+$gradientPlanet1: radial-gradient(87% 87% at 85.39% 0%, $blackColor 0%, #160815 56.73%, #460D13 84.09%, #9C4F2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 
 $boxShadowWhite1: 0 0 60px rgba($whiteColor, .5);
 
@@ -82,6 +85,8 @@ $xs-mf: $xs + 1;
   --fs-16: 26rem;
   --fs-17: 28rem;
   --fs-18: 56rem;
+  --fs-19: 34rem;
+  --fs-20: 13.5rem;
 
   --gap: 30rem;
   --gap-: -30rem;
@@ -91,8 +96,40 @@ $xs-mf: $xs + 1;
   --gap-container-: var(--gap-);
 
   --section-y: 50rem;
+  --section-y-: -50rem;
+
+  --scroll-offset: 128rem;
+
+  --header-height: var(--scroll-offset);
 
   --vh: 1vh;
-  @media (max-width: $lg) {
+
+  --title-y-md: 24rem;
+  --title-y-md-: -24rem;
+  @media (max-width: $md) {
+    --fs-default: 10rem;
+    --fs-1: 36rem;
+    --fs-2: 32rem;
+    --fs-3: 32rem;
+    --fs-4: 32rem;
+    --fs-5: 24rem;
+    --fs-6: 18rem;
+    --fs-8: 12rem;
+    --fs-13: 16rem;
+    --fs-15: 65.81rem;
+    --fs-16: 14.5rem;
+    --fs-17: 24rem;
+    --fs-19: 16rem;
+
+    --gap: 8rem;
+    --gap-: -8rem;
+    --gap-fluid: 16rem;
+    --gap-fluid-: -16rem;
+    --gap-container: var(--gap-fluid);
+    --gap-container-: var(--gap-fluid-);
+
+    --scroll-offset: 100rem;
+
+    --section-y: 36rem;
   }
 }

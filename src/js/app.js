@@ -11,7 +11,9 @@ import { SetVH } from './modules/SetVH.js';
 import BaseHelpers from './helpers/BaseHelpers.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import PopupManager from './modules/PopupManager.js';
+import InitSliders from './modules/SwiperInit.js';
 import FaqCard from './modules/FaqCard.js';
+import FileUploader from './modules/FileUploader.js';
 
 // set vh
 SetVH();
@@ -24,8 +26,12 @@ BaseHelpers.addLoadedClass();
 document.addEventListener('DOMContentLoaded', function() {
   // header nav mobile toggle
   new HeaderBtnToggle();
-  // faq card
-  new FaqCard();
   // modal init
   new PopupManager();
+  // slider init
+  InitSliders();
+  // faq card
+  new FaqCard();
+  // FileUploader
+  new FileUploader('.js-file-upload');
 });

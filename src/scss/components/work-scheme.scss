@@ -1,0 +1,114 @@
+.work-scheme {
+  $workSchemeGap: -70rem;
+  padding: var(--section-y) 0 calc(3 * var(--section-y));
+  position: relative;
+  @media (max-width: $md) {
+    padding-top: 108rem;
+    padding-bottom: var(--section-y);
+    order: -6;
+  }
+  &:after {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &__bg {
+    @extend %img-cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    mix-blend-mode: exclusion;
+    opacity: .6;
+    z-index: -4;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 30rem;
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
+  }
+  &__slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $md) {
+      flex-wrap: wrap;
+    }
+  }
+  &__slider-nav {
+    max-width: 280rem;
+    flex: 0 0 280rem;
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: var(--gap-container);
+      flex-basis: 100%;
+    }
+    .swiper {
+      @media (max-width: $md) {
+        margin-right: var(--gap-container-);
+        margin-left: var(--gap-container-);
+        padding-right: var(--gap-container);
+        padding-left: var(--gap-container);
+      }
+      &-wrapper {
+        @media (min-width: $lg-mf) {
+          display: block;
+        }
+      }
+      &-slide {
+        @media (min-width: $lg-mf) {
+          height: auto;
+        }
+      }
+    }
+    &-slide {
+      flex-grow: 1;
+      @media (max-width: $md) {
+        height: auto;
+      }
+      &:not(:last-child) {
+        @media (min-width: $md-mf) {
+          margin-bottom: 22rem;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+      @media (max-width: $md) {
+      }
+    }
+  }
+  &__slider-main {
+    max-width: calc(100% - 280rem - var(--gap-fluid));
+    counter-reset: workSchemeCounter;
+    flex: 0 0 calc(100% - 280rem - var(--gap-fluid));
+    border-radius: $radiusSemi;
+    overflow: hidden;
+    @media (max-width: $md) {
+      max-width: 100%;
+      flex-basis: 100%;
+      border-radius: 10rem;
+    }
+    .swiper {
+      height: 100%;
+      &-wrapper {
+        @media (min-width: $lg-mf) {
+        }
+      }
+      &-slide {
+        @media (min-width: $lg-mf) {
+        }
+      }
+    }
+    &-slide {
+      height: 100%;
+      counter-increment: workSchemeCounter;
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

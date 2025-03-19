@@ -1,5 +1,25 @@
 .faq {
-  padding: var(--section-y) 0;
+  padding: var(--section-y) 0 calc(2 * var(--section-y));
+  position: relative;
+  @media (max-width: $md) {
+    padding-bottom: var(--section-y);
+    order: -4;
+  }
+  &:before {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &__decor {
+    z-index: -18;
+    &--1 {
+      width: 2270rem;
+      margin: -148rem 0 0 -940rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
   &__container {
   }
   &__title {
@@ -7,6 +27,9 @@
     @media (min-width: $lg-mf) {
       font-size: var(--fs-3);
       line-height: 1.24390243902;
+    }
+    @media (max-width: $md) {
+      margin-bottom: 12rem;
     }
     strong {
       white-space: nowrap;
@@ -17,11 +40,21 @@
     margin: 0 0 80rem;
     font-size: var(--fs-10);
     line-height: $lineHeight4;
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: var(--title-y-md);
+      font-weight: 500;
+      font-size: 16rem;
+    }
   }
   &__list {
     counter-reset: faqCounter;
     &-card {
       counter-increment: faqCounter;
+      @media (max-width: $md) {
+        margin-right: var(--gap-container-);
+        margin-left: var(--gap-container-);
+      }
       & + & {
         border-top: 1px solid $greyLightColor;
       }

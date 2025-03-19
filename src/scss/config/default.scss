@@ -84,6 +84,9 @@ h1,
   font-weight: 900;
   font-size: var(--fs-1);
   line-height: $lineHeight2;
+  @media (max-width: $lg) {
+    line-height: $lineHeight5;
+  }
 }
 
 h2,
@@ -91,6 +94,9 @@ h2,
   font-weight: 900;
   font-size: var(--fs-2);
   line-height: $lineHeight2;
+  @media (max-width: $lg) {
+    line-height: $lineHeight5;
+  }
 }
 
 h3,
@@ -98,24 +104,36 @@ h3,
   font-weight: 900;
   font-size: var(--fs-3);
   line-height: $lineHeight2;
+  @media (max-width: $lg) {
+    line-height: $lineHeight5;
+  }
 }
 
 h4,
 .fs-4 {
   font-size: var(--fs-4);
   line-height: $lineHeight2;
+  @media (max-width: $lg) {
+    line-height: $lineHeight5;
+  }
 }
 
 h5,
 .fs-5 {
   font-size: var(--fs-5);
   line-height: $lineHeight2;
+  @media (max-width: $lg) {
+    line-height: $lineHeight5;
+  }
 }
 
 h6,
 .fs-6 {
   font-size: var(--fs-6);
   line-height: $lineHeight2;
+  @media (max-width: $lg) {
+    line-height: $lineHeight5;
+  }
 }
 
 p {
@@ -150,6 +168,18 @@ svg,
 }
 
 .site {
+  &__pattern-bg {
+    background: url(../images/pattern-bg.png) 50% top / 100% auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: 1;
+    z-index: -100;
+  }
   &__inner {
     min-height: 100vh;
     display: flex;
@@ -158,6 +188,8 @@ svg,
   &__header {
   }
   &__main {
+    display: flex;
+    flex-direction: column;
   }
   &__footer {
     margin-top: auto;

@@ -1,0 +1,74 @@
+.cta-section {
+  padding: var(--section-y) 0 120rem;
+  position: relative;
+  @media (max-width: $md) {
+    padding-bottom: var(--section-y);
+  }
+  &:before,
+  &:after {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &__decor {
+    z-index: -18;
+    &--1 {
+      width: 2270rem;
+      margin: 128rem 0 0 940rem;
+      top: -2024rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 6rem;
+    @media (max-width: $md) {
+      margin-bottom: 5rem;
+    }
+  }
+  &__description {
+    margin: 0 0 40rem;
+    line-height: $lineHeight4;
+    color: rgba($whiteColor, .8);
+    @media (max-width: $md) {
+      margin-bottom: 20rem;
+      font-size: 16rem;
+    }
+  }
+  &__form {
+    margin-bottom: var(--gap-);
+    textarea {
+      min-height: 180rem;
+    }
+    .btn {
+      border-radius: $radiusSemi;
+    }
+    &-col {
+      margin-bottom: var(--gap);
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &--textarea {
+        order: -3;
+      }
+      &--file {
+        order: -1;
+      }
+      &--input {
+        order: -2;
+      }
+      &--btn {
+      }
+    }
+    &-file-upload {
+    }
+    &-btn {
+      @media (max-width: $md) {
+        width: 100%;
+      }
+    }
+  }
+}

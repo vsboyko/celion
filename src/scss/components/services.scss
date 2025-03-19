@@ -1,9 +1,20 @@
 .services {
   padding: var(--section-y) 0;
+  @media (max-width: $md) {
+  }
+  &:before,
+  &:after {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
   &__container {
   }
   &__title {
     margin: 0 0 30rem;
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
     .word-accent {
     }
   }
@@ -14,5 +25,10 @@
     font-size: var(--fs-8);
     line-height: $lineHeight7;
     color: rgba($whiteColor, .8);
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: 20rem;
+      font-size: 16rem;
+    }
   }
 }

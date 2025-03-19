@@ -15,6 +15,7 @@
 @import 'config/default';
 
 /** Libraries */
+@import 'libs/swiper';
 
 /** Common parameters, templates, and utility classes */
 @import 'config/media';
@@ -31,7 +32,11 @@
 @import 'components/price-calculation';
 @import 'components/services';
 @import 'components/benefits';
+@import 'components/appeal';
 @import 'components/faq';
 @import 'components/reviews';
+@import 'components/work-scheme';
+@import 'components/advantages';
+@import 'components/cta-section';
 
 /** Inclusion of styles for individual blocks and sections */

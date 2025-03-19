@@ -1,6 +1,10 @@
 .header {
   width: 100%;
-  padding: 35rem 0;
+  height: var(--header-height);
+  padding: 15rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: var(--fs-12);
   position: absolute;
   top: 0;
@@ -11,13 +15,52 @@
     align-items: center;
   }
   &__inner {
+    @media (max-width: $md) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+    }
   }
   &__logo {
     max-width: 204rem;
     flex-shrink: 0;
     top: 2rem;
+    @media (max-width: $md) {
+      max-width: 126rem;
+      top: 0;
+    }
   }
   &__toggle {
+    @extend %area-click, %btn-reset;
+    @media (max-width: $md) {
+      width: 32rem;
+      height: 32rem;
+      margin: 0 0 0 auto;
+      display: flex;
+      flex-shrink: 0;
+      position: relative;
+      transition: $transition;
+    }
+    .u-icon {
+      width: 100%;
+      height: 100%;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:not(.is-active) {
+      .u-icon:nth-child(1) {
+        display: block;
+      }
+    }
+    &.is-active {
+      .u-icon:nth-child(2) {
+        display: block;
+      }
+    }
   }
   &__dropdown {
     margin: 0 0 0 5%;
@@ -25,6 +68,9 @@
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
+    @media (max-width: $md) {
+      display: none;
+    }
   }
   &__nav {
     margin: 8rem 2.9% 0 0;

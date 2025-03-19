@@ -1,0 +1,51 @@
+<section class="cta-section">
+  <picture class="u-decor cta-section__decor cta-section__decor--1">
+    <img
+      src="images/decor-1.svg"
+      alt=""
+      width="2270"
+      height="3454">
+  </picture>
+  <div class="container container--size-md cta-section__container">
+    <h2 class="u-title cta-section__title">Обсудить проект</h2>
+    <div class="u-content cta-section__description">
+      <p>Выберите тип задачи, расскажите о ней, каким вы видите решение и результат:</p>
+    </div>
+    <form action="#" class="row cta-section__form">
+      <div class="row__col--9 cta-section__form-col cta-section__form-col--textarea">
+        <textarea name="message" cols="" rows="" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" placeholder="Напишите кратко о проекте"></textarea>
+      </div>
+      <div class="row__col--3 cta-section__form-col cta-section__form-col--file">
+        <span class="js-file-upload file-upload cta-section__form-file-upload">
+          <label for="cta_files" class="file-upload__label">
+            <input type="file" name="cta_files[]" id="cta_files" class="js-file-upload-input file-upload__input" multiple>
+            <span class="file-upload__icon">
+              <svg class="u-icon"><use xlink:href="images/icons/icons.svg#file-attach"></use></svg>
+            </span>
+            <span class="file-upload__label-content">
+              <span class="file-upload__label-title">Прикрепить файлы</span>
+              <span class="file-upload__label-desc">Загружаемые файлы не должны превышать 20 мб</span>
+            </span>
+          </label>
+          <span class="js-file-upload-list file-upload__list"></span>
+        </span>
+      </div>
+      <div class="row__col--3 cta-section__form-col cta-section__form-col--input">
+        <input type="text" name="name" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" placeholder="Как вас зовут?">
+      </div>
+      <div class="row__col--3 cta-section__form-col cta-section__form-col--input">
+        <input type="email" name="name" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" required="" placeholder="E-mail *">
+      </div>
+      <div class="row__col--3 cta-section__form-col cta-section__form-col--input">
+        <input type="tel" name="phone" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" placeholder="Телефон">
+      </div>
+      <div class="row__col--3 cta-section__form-col cta-section__form-col--btn">
+        <button type="submit" class="btn btn--theme-accent-gradient btn--size-md cta-section__form-btn">
+          <span class="btn__inner">
+            <span class="btn__title">Обсудить проект</span>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

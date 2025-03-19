@@ -1,27 +1,84 @@
 .reviews {
-  padding: var(--section-y) 0;
+  padding: var(--section-y) 0 calc(2 * var(--section-y));
+  position: relative;
+  @media (max-width: $md) {
+    padding-bottom: var(--section-y);
+    order: -3;
+  }
+  &:before {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &__hero {
+    &--1 {
+      width: 390rem;
+      margin-right: -1002rem;
+      bottom: -320rem;
+      right: 50%;
+      z-index: 1;
+      img {
+        transform: scaleX(-1);
+      }
+    }
+  }
+  &__decor {
+    z-index: -18;
+    &--1 {
+      width: 100%;
+      top: -630rem;
+      left: 0;
+      mix-blend-mode: difference;
+    }
+  }
   &__container {
   }
   &__title {
     margin: 0 0 30rem;
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
   }
   &__slider {
-    column-count: 3;
-    column-gap: 4rem;
-    position: relative;
-    z-index: 0;
-    &:after {
-      background: $gradientBlack2;
-      width: 100%;
-      height: 60%;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      user-select: none;
-      pointer-events: none;
+    .swiper {
+      @media (max-width: $md) {
+        margin-right: var(--gap-container-);
+        margin-left: var(--gap-container-);
+        padding-right: var(--gap-container);
+        padding-left: var(--gap-container);
+      }
+      &-wrapper {
+        @media (min-width: $lg-mf) {
+          display: block;
+          column-count: 3;
+          column-gap: 4rem;
+        }
+      }
+      &-slide {
+        height: auto;
+        @media (min-width: $lg-mf) {
+          width: auto;
+        }
+      }
     }
     &-wrapper {
+      position: relative;
+      z-index: 0;
+      &:after {
+        @media (min-width: $md-mf) {
+          background: $gradientBlack2;
+          width: 100vw;
+          height: 60%;
+          content: '';
+          position: absolute;
+          bottom: calc(2 * var(--section-y-));
+          left: 50%;
+          transform: translate(-50%, 0);
+          user-select: none;
+          pointer-events: none;
+          z-index: 1;
+        }
+      }
     }
     &-slide {
       break-inside: avoid;

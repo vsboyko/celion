@@ -1,12 +1,45 @@
 .price-calculation {
   padding: var(--section-y) 0;
+  position: relative;
+  @media (max-width: $md) {
+    order: -7;
+  }
+  &__decor {
+    z-index: -18;
+    &--1 {
+      width: 2270rem;
+      margin: -528rem 0 0 -940rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--2 {
+      width: 2270rem;
+      margin: -1128rem 0 0 780rem;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
   &__container {
+    margin-bottom: -100rem;
+    @media (max-width: $md) {
+      margin-bottom: 0;
+    }
   }
   &__title {
     max-width: 1230rem;
     margin: 0 0 -20rem;
-    .word-accent {
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: 12rem;
+      font-size: 30rem;
+    }
+    .u-word-accent {
       margin: 0 .8ch;
+      @media (max-width: $md) {
+        margin: 0 -7rem 0 0;
+      }
     }
   }
   &__description {
@@ -16,13 +49,47 @@
     font-size: var(--fs-17);
     line-height: $lineHeight6;
     text-align: right;
+    @media (max-width: $md) {
+      max-width: 224rem;
+      margin: 0 0 0 auto;
+      font-size: 10rem;
+    }
+  }
+  &__hero {
+    margin: -174rem 0 var(--section-y-);
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+    z-index: -28;
+    @media (max-width: $md) {
+      margin: -52rem var(--gap-container-) var(--section-y-) - 76rem;
+    }
+    img {
+      width: 100vw;
+      height: auto;
+      display: block;
+      transform: translate(-50%, 0);
+      position: relative;
+      left: 50%;
+      @media (max-width: $md) {
+        width: 100%;
+        transform: none;
+        left: 0;
+      }
+    }
   }
   &__footer {
     text-align: right;
+    @media (max-width: $md) {
+      position: absolute;
+      top: 100%;
+      right: var(--gap-container);
+      left: var(--gap-container);
+    }
     &-btn {
       width: 100%;
       font-weight: 500;
-      @media (min-width: $sm-mf) {
+      @media (min-width: $md-mf) {
         width: auto;
         min-width: 438rem;
       }
