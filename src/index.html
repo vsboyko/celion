@@ -64,7 +64,7 @@
                   <button type="button" class="d-md-block intro__footer-btn-mobile">
                     <span>Креативный подход к<br>цифровому успеху</span>
                   </button>
-                  <button type="button" class="d-md-none btn btn--theme-accent-gradient-2 btn--size-md intro__footer-btn">
+                  <button type="button" data-modal="popup-form" class="d-md-none btn btn--theme-accent-gradient-2 btn--size-md intro__footer-btn">
                     <span class="btn__inner">
                       <span class="btn__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                     </span>
@@ -320,11 +320,11 @@
                 </div>
               </div>
               <footer class="wow fadeIn portfolio__footer" data-wow-delay=".4s">
-                <a href="#" class="btn btn--theme-accent-gradient btn--size-md portfolio__footer-btn">
+                <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-md portfolio__footer-btn">
                   <span class="btn__inner">
                     <span class="btn__title">Все работы</span>
                   </span>
-                </a>
+                </button>
               </footer>
             </div>
           </section>
@@ -351,11 +351,11 @@
                 <p>За 3 дня подготовим план точечных улучшений (от дизайна и&nbsp;функционала до безопасности), который может повысить эффективность&nbsp;на 30–50% уже в первый месяц.</p>
               </div>
               <footer class="wow fadeIn price-calculation__footer" data-wow-delay=".4s">
-                <a href="#" class="btn btn--theme-accent-gradient btn--size-md price-calculation__footer-btn">
+                <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-md price-calculation__footer-btn">
                   <span class="btn__inner">
                     <span class="btn__title">Рассчитать стоимость</span>
                   </span>
-                </a>
+                </button>
               </footer>
               <picture class="wow fadeIn price-calculation__hero" data-wow-delay=".2s">
                 <source
@@ -531,7 +531,7 @@
                 </div>
                 <div class="wow fadeIn row__col--7 appeal__col appeal__col--footer" data-wow-delay=".6s">
                   <footer class="appeal__footer">
-                    <button type="button" class="btn btn--theme-accent-gradient btn--size-md appeal__footer-btn">
+                    <a href="file.txt" download target="_blank" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-md appeal__footer-btn">
                       <span class="btn__inner">
                         <span class="btn__title">Скачать PDF</span>
                       </span>
@@ -915,7 +915,7 @@
           <!-- reviews END -->
           <!-- work-scheme BEGIN -->
           <section class="shadow-y work-scheme">
-            <picture class="wow fadeIn d-md-none work-scheme__bg" data-wow-delay=".2s">
+            <picture class="d-md-none work-scheme__bg">
               <source
                 srcset="images/work-scheme-bg.webp"
                 type="image/webp">

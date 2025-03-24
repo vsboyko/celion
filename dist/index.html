@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20250324185211">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250324185833">
   <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
@@ -126,7 +126,7 @@
                   <button type="button" class="intro__footer-btn-mobile d-md-block">
                     <span>Креативный подход к<br>цифровому успеху</span>
                   </button>
-                  <button type="button" class="btn btn--size-md btn--theme-accent-gradient-2 d-md-none intro__footer-btn">
+                  <button type="button" data-modal="popup-form" class="btn btn--size-md btn--theme-accent-gradient-2 d-md-none intro__footer-btn">
                     <span class="btn__inner">
                       <span class="btn__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                     </span>
@@ -366,11 +366,11 @@
                 </div>
               </div>
               <footer class="fadeIn wow portfolio__footer" data-wow-delay=".4s">
-                <a href="#" class="btn btn--size-md btn--theme-accent-gradient portfolio__footer-btn">
+                <button type="button" data-modal="popup-form" class="btn btn--size-md btn--theme-accent-gradient portfolio__footer-btn">
                   <span class="btn__inner">
                     <span class="btn__title">Все работы</span>
                   </span>
-                </a>
+                </button>
               </footer>
             </div>
           </section>
@@ -389,11 +389,11 @@
                 <p>За 3 дня подготовим план точечных улучшений (от дизайна и&nbsp;функционала до безопасности), который может повысить эффективность&nbsp;на 30–50% уже в первый месяц.</p>
               </div>
               <footer class="fadeIn wow price-calculation__footer" data-wow-delay=".4s">
-                <a href="#" class="btn btn--size-md btn--theme-accent-gradient price-calculation__footer-btn">
+                <button type="button" data-modal="popup-form" class="btn btn--size-md btn--theme-accent-gradient price-calculation__footer-btn">
                   <span class="btn__inner">
                     <span class="btn__title">Рассчитать стоимость</span>
                   </span>
-                </a>
+                </button>
               </footer>
               <picture class="fadeIn wow price-calculation__hero" data-wow-delay=".2s">
                 <source srcset="images/price-calculation.webp" type="image/webp">
@@ -429,7 +429,7 @@
               <source srcset="images/hero-1.webp" type="image/webp">
               <img src="images/hero-1.png" alt="" width="390" height="496">
             </picture>
-            <picture class="fadeIn wow d-md-none benefits__bg" data-wow-delay=".2s">
+            <picture class="fadeIn wow benefits__bg d-md-none" data-wow-delay=".2s">
               <source srcset="images/benefits-bg.webp" type="image/webp">
               <img src="images/benefits-bg.png" alt="Что дают бизнесу комплексные IT-решения" width="1920" height="1080">
             </picture>
@@ -537,12 +537,12 @@
                 </div>
                 <div class="fadeIn wow appeal__col appeal__col--footer row__col--7" data-wow-delay=".6s">
                   <footer class="appeal__footer">
-                    <button type="button" class="btn btn--size-md btn--theme-accent-gradient appeal__footer-btn">
+                    <a href="file.txt" download target="_blank" data-modal="popup-form" class="btn btn--size-md btn--theme-accent-gradient appeal__footer-btn">
                       <span class="btn__inner">
                         <span class="btn__title">Скачать PDF</span>
                       </span>
-                    </button>
-                  </footer>
+                    
+                  </a></footer>
                 </div>
               </div>
             </div>
@@ -907,7 +907,7 @@
           
           
           <section class="shadow-y work-scheme">
-            <picture class="fadeIn wow d-md-none work-scheme__bg" data-wow-delay=".2s">
+            <picture class="d-md-none work-scheme__bg">
               <source srcset="images/work-scheme-bg.webp" type="image/webp">
               <img src="images/work-scheme-bg.png" alt="Схема работы" width="1920" height="1080">
             </picture>
@@ -1309,6 +1309,6 @@
 </div>
     </div>
 
-    <script src="js/app.min.js??=v=20250324185211"></script>
+    <script src="js/app.min.js??=v=20250324185833"></script>
   </body>
 </html>
