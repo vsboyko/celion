@@ -3,7 +3,7 @@ html{-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size
 
 html {
   font-size: $siteResolution;
-  scroll-behavior: smooth;
+  scroll-behavior: unset;
 }
 
 html,
@@ -13,14 +13,12 @@ body {
 
 body {
   background: $bgSite;
-  // background: url(../images/proba.jpg) center top $bgSite no-repeat;
   font-style: normal;
   font-weight: $mainWeight;
   font-size: var(--fs-default);
   line-height: $lineHeightDefault;
   font-family: $fontFamily;
   color: $fontColor;
-  // opacity: .4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -28,8 +26,37 @@ body {
     overflow: hidden;
   }
   &.is-menu-opened {
-    @media (max-width: $lg) {
+    @media (max-width: $md) {
       overflow: hidden;
+    }
+    .header.js-header-sticky {
+      @media (max-width: $md) {
+        margin-top: 0;
+      }
+      .header__inner {
+        @media (max-width: $md) {
+          background: $blackColor;
+        }
+      }
+    }
+    .header__toggle {
+      .u-icon:nth-child(2) {
+        display: block;
+      }
+    }
+  }
+  &:not(.is-menu-opened) {
+    @media (max-width: $md) {
+      .header__dropdown {
+        transform: translateX(-100vw);
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+    .header__toggle {
+      .u-icon:nth-child(1) {
+        display: block;
+      }
     }
   }
 }
@@ -179,6 +206,10 @@ svg,
     user-select: none;
     opacity: 1;
     z-index: -100;
+    @media (max-width: $md) {
+      background-color: rgba($accentColor, .14);
+      background-blend-mode: exclusion;
+    }
   }
   &__inner {
     min-height: 100vh;
@@ -188,6 +219,7 @@ svg,
   &__header {
   }
   &__main {
+    margin-top: calc(-1 * (var(--header-height) + var(--header-gap)));
     display: flex;
     flex-direction: column;
   }

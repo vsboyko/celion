@@ -207,13 +207,19 @@
     }
   }
   &__planet {
+    width: 100%;
+    max-width: 1242rem;
+    position: absolute;
+    top: -220rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -4;
     @media (max-width: $md) {
       margin: 0 -36rem;
       pointer-events: none;
       user-select: none;
       overflow: hidden;
       position: relative;
-      z-index: -4;
     }
     img {
       @media (max-width: $md) {

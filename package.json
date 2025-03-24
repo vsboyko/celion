@@ -78,6 +78,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "swiper": "^11.2.5"
+    "swiper": "^11.2.5",
+    "wowjs": "^1.1.3"
   }
 }

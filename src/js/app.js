@@ -9,7 +9,11 @@
 
 import { SetVH } from './modules/SetVH.js';
 import BaseHelpers from './helpers/BaseHelpers.js';
+import initWOW from './modules/WOW.js';
+import StickyHeader from './modules/StickyHeader.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
+import { SmoothScroll } from './modules/SmoothScroll.js';
+import { ToggleActiveClass } from './modules/toggleActiveClass.js';
 import PopupManager from './modules/PopupManager.js';
 import InitSliders from './modules/SwiperInit.js';
 import FaqCard from './modules/FaqCard.js';
@@ -24,6 +28,13 @@ BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
 document.addEventListener('DOMContentLoaded', function() {
+  initWOW(190);
+  // header sticky
+  new StickyHeader('.js-header-sticky', 'is-sticky');
+  // nav active anchor
+  const smoothScroll = new SmoothScroll('.js-anchor', '--scroll-offset', 650);
+  // nav toggle
+  new ToggleActiveClass('.js-nav-submenu-toggle', 'is-active');
   // header nav mobile toggle
   new HeaderBtnToggle();
   // modal init

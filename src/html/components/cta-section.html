@@ -16,7 +16,7 @@
         <textarea name="message" cols="" rows="" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" placeholder="Напишите кратко о проекте"></textarea>
       </div>
       <div class="row__col--3 cta-section__form-col cta-section__form-col--file">
-        <span class="js-file-upload file-upload cta-section__form-file-upload">
+        <div class="js-file-upload file-upload cta-section__form-file-upload">
           <label for="cta_files" class="file-upload__label">
             <input type="file" name="cta_files[]" id="cta_files" class="js-file-upload-input file-upload__input" multiple>
             <span class="file-upload__icon">
@@ -28,7 +28,7 @@
             </span>
           </label>
           <span class="js-file-upload-list file-upload__list"></span>
-        </span>
+        </div>
       </div>
       <div class="row__col--3 cta-section__form-col cta-section__form-col--input">
         <input type="text" name="name" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" placeholder="Как вас зовут?">
@@ -37,7 +37,7 @@
         <input type="email" name="name" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" required="" placeholder="E-mail *">
       </div>
       <div class="row__col--3 cta-section__form-col cta-section__form-col--input">
-        <input type="tel" name="phone" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" placeholder="Телефон">
+        <input type="tel" name="phone" class="js-phone-mask u-input u-input--size-md u-input--type-textarea u-input--theme-white-light" required placeholder="Телефон*">
       </div>
       <div class="row__col--3 cta-section__form-col cta-section__form-col--btn">
         <button type="submit" class="btn btn--theme-accent-gradient btn--size-md cta-section__form-btn">

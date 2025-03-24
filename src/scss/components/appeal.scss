@@ -5,6 +5,11 @@
     padding-top: var(--section-y);
     order: -4;
   }
+  &:before {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
   &__decor {
     z-index: -18;
     &--1 {

@@ -1,30 +1,43 @@
 class HeaderBtnToggle {
   constructor() {
-    this.burgerButton = document.querySelector('.js-header-toggle-open');
-    this.closeButton = document.querySelector('.js-header-toggle-close');
+    this.toggleButtons = document.querySelectorAll('.js-nav-toggle');
     this.body = document.body;
-    this.headerNav = document.querySelector('.header__aside');
-    
-    if (this.burgerButton) {
-      this.burgerButton.addEventListener('click', () => this.toggleMenu());
+    this.dropdown = document.querySelector('.header__dropdown');
+
+    if (this.toggleButtons.length) {
+      this.toggleButtons.forEach((button) => {
+        button.addEventListener('click', () => this.toggleMenu());
+      });
     }
-    if (this.closeButton) {
-      this.closeButton.addEventListener('click', () => this.closeMenu());
+
+    document.addEventListener('click', (event) => this.handleOutsideClick(event));
+  }
+
+  toggleMenu() {
+    if (this.body.classList.contains('is-menu-opened')) {
+      this.closeMenu();
+    } else {
+      this.openMenu();
     }
   }
-  
-  toggleMenu() {
-    this.burgerButton.classList.toggle('is-active');
-    this.body.classList.toggle('is-menu-opened');
-    this.headerNav.classList.toggle('is-show');
+
+  openMenu() {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    this.body.style.paddingRight = `${scrollbarWidth}px`;
+    this.body.classList.add('is-menu-opened');
   }
 
   closeMenu() {
-    if (this.burgerButton) {
-      this.burgerButton.classList.remove('is-active');
-    }
     this.body.classList.remove('is-menu-opened');
-    this.headerNav.classList.remove('is-show');
+    this.body.style.paddingRight = '';
+  }
+
+  handleOutsideClick(event) {
+    if (this.body.classList.contains('is-menu-opened') &&
+        this.dropdown && !this.dropdown.contains(event.target) &&
+        !event.target.closest('.js-nav-toggle')) {
+      this.closeMenu();
+    }
   }
 }
 

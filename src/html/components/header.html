@@ -19,27 +19,44 @@
       <nav class="u-nav header__nav" role="navigation">
         <ul class="u-nav__list">
           <li class="u-nav__item">
-            <a href="#" class="u-nav__link">Портфолио и кейсы</a>
+            <a href="#portfolio" class="js-anchor u-nav__link">Портфолио и кейсы</a>
           </li>
           <li class="u-nav__item">
-            <button type="button" class="u-nav__btn-submenu">
+            <button type="button" class="js-nav-submenu-toggle u-nav__btn-submenu">
               <svg class="u-icon">
                 <use xlink:href="images/icons/icons.svg#arrow-down-1"></use>
               </svg>
             </button>
-            <a href="#" class="u-nav__link">Услуги</a>
+            <a href="services.html" class="u-nav__link">Услуги</a>
+            <ul class="u-nav__dropdown">
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 1</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 2</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 3</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 4</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 5</a>
+              </li>
+            </ul>
           </li>
           <li class="u-nav__item">
-            <a href="#" class="u-nav__link">Партнерская программа</a>
+            <a href="partners.html" class="u-nav__link">Партнерская программа</a>
           </li>
           <li class="u-nav__item">
-            <a href="#" class="u-nav__link">Контакты</a>
+            <a href="contacts.html" class="u-nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="btn-group header__btn-group">
         <div class="btn-group__inner">
-          <button type="button" class="js-btn-video btn btn--theme-white-transparent btn--size-sm">
+          <button type="button" data-modal="popup-thanks" class="btn btn--theme-white-transparent btn--size-sm">
             <span class="btn__inner">
               <span class="btn__icon btn__icon--dir-ltr">
                 <svg class="u-icon">
@@ -49,7 +66,7 @@
               <span class="fw-500 btn__title">Презентация</span>
             </span>
           </button>
-          <button type="button" class="btn btn--theme-accent-gradient btn--size-sm">
+          <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-sm">
             <span class="btn__inner">
               <span class="btn__title">ОСТАВИТЬ ЗАЯВКУ</span>
             </span>

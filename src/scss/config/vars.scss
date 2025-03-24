@@ -35,7 +35,8 @@ $pinkLightColor: #DD5CE5;
 $redColor: #F02121;
 $accentColor: $blueColor;
 
-$gradientAccent1: linear-gradient(130deg, $blueColor -2%, $purpleColor 118%);
+$gradientAccent1: linear-gradient(130deg, $accentColor -2%, $purpleColor 118%);
+$gradientAccent2: linear-gradient(180deg, $accentColor -2%, $purpleColor 118%);
 $gradientBlack1: linear-gradient(180deg, $blackColor 0%, rgba($blackColor, 0) 100%);
 $gradientBlack2: linear-gradient(0deg, $blackColor 1%, rgba($blackColor, 0) 100%);
 $gradientPlanet1: radial-gradient(87% 87% at 85.39% 0%, $blackColor 0%, #160815 56.73%, #460D13 84.09%, #9C4F2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -98,9 +99,10 @@ $xs-mf: $xs + 1;
   --section-y: 50rem;
   --section-y-: -50rem;
 
-  --scroll-offset: 128rem;
+  --scroll-offset: 84rem;
 
   --header-height: var(--scroll-offset);
+  --header-gap: 38rem;
 
   --vh: 1vh;
 
@@ -128,7 +130,7 @@ $xs-mf: $xs + 1;
     --gap-container: var(--gap-fluid);
     --gap-container-: var(--gap-fluid-);
 
-    --scroll-offset: 100rem;
+    --scroll-offset: 62rem;
 
     --section-y: 36rem;
   }

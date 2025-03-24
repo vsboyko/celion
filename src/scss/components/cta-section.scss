@@ -4,12 +4,6 @@
   @media (max-width: $md) {
     padding-bottom: var(--section-y);
   }
-  &:before,
-  &:after {
-    @media (max-width: $md) {
-      display: none;
-    }
-  }
   &__decor {
     z-index: -18;
     &--1 {
@@ -43,7 +37,6 @@
       min-height: 180rem;
     }
     .btn {
-      border-radius: $radiusSemi;
     }
     &-col {
       margin-bottom: var(--gap);
@@ -51,19 +44,34 @@
         max-width: 100%;
         flex-basis: 100%;
       }
+      &:not(:last-child) {
+        @media (max-width: $md) {
+          margin-bottom: var(--gap-container);
+        }
+      }
       &--textarea {
-        order: -3;
+        @media (max-width: $md) {
+          order: -3;
+        }
       }
       &--file {
-        order: -1;
+        @media (max-width: $md) {
+          order: -1;
+        }
       }
       &--input {
-        order: -2;
+        @media (max-width: $md) {
+          order: -2;
+        }
       }
       &--btn {
       }
     }
     &-file-upload {
+      @media (max-width: $md) {
+        margin-top: var(--gap);
+        margin-bottom: var(--gap);
+      }
     }
     &-btn {
       @media (max-width: $md) {

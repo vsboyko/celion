@@ -1,11 +1,24 @@
 .services {
   padding: var(--section-y) 0;
+  position: relative;
   @media (max-width: $md) {
   }
   &:before,
   &:after {
     @media (max-width: $md) {
       display: none;
+    }
+  }
+  &__hero {
+    &--1 {
+      @media (max-width: $md) {
+        width: 92rem;
+        top: 262rem;
+        right: -4rem;
+      }
+      img {
+        transform: scaleX(-1);
+      }
     }
   }
   &__container {
@@ -29,6 +42,16 @@
       max-width: 100%;
       margin-bottom: 20rem;
       font-size: 16rem;
+    }
+  }
+  &__list {
+    li {
+      &:nth-child(1),
+      &:nth-child(2) {
+        @media (max-width: $md) {
+          margin-right: 80rem;
+        }
+      }
     }
   }
 }

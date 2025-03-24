@@ -6,17 +6,58 @@
   flex-direction: column;
   justify-content: center;
   font-size: var(--fs-12);
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
+  transition: $transition;
+  transition-property: height, padding;
   z-index: 998;
+  &:before {
+    background: rgba($blackColor, .5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba($whiteColor, .2);
+    transition: $transition;
+    transition-property: visibility, opacity;
+    z-index: -1;
+  }
+  &.js-header-sticky {
+    margin-top: var(--header-gap);
+    @media (max-width: $sm) {
+    }
+    .header__inner {
+      @media (max-width: $md) {
+        height: var(--header-height);
+        margin: 0 var(--gap-container-);
+        padding: 0 var(--gap-container);
+      }
+    }
+  }
+  &.js-header-sticky:not(.is-sticky) {
+    &:before {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  &.is-sticky {
+    .header__logo {
+      @media (min-width: $md-mf) {
+        max-width: 164rem;
+        margin-right: 44rem;
+      }
+    }
+  }
   &__container {
     display: flex;
     align-items: center;
   }
   &__inner {
     @media (max-width: $md) {
-      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -51,16 +92,6 @@
       top: 0;
       left: 0;
     }
-    &:not(.is-active) {
-      .u-icon:nth-child(1) {
-        display: block;
-      }
-    }
-    &.is-active {
-      .u-icon:nth-child(2) {
-        display: block;
-      }
-    }
   }
   &__dropdown {
     margin: 0 0 0 5%;
@@ -69,13 +100,41 @@
     align-items: center;
     flex-grow: 1;
     @media (max-width: $md) {
-      display: none;
+      background: $blackColor;
+      margin-left: 0;
+      padding: calc(8 * var(--gap-container)) var(--gap-container) var(--gap-container);
+      flex-wrap: wrap;
+      align-items: initial;
+      justify-content: initial;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      z-index: -1;
     }
   }
   &__nav {
     margin: 8rem 2.9% 0 0;
     flex-grow: 1;
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin: 0 0 40rem;
+      flex: 0 0 100%;
+    }
   }
   &__btn-group {
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-top: auto;
+      flex: 0 0 100%;
+    }
+    .btn-group__inner {
+      @media (max-width: $md) {
+        flex-direction: column;
+      }
+    }
   }
 }

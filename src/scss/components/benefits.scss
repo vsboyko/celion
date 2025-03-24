@@ -5,7 +5,8 @@
   @media (max-width: $md) {
     order: -5;
   }
-  &:before {
+  &:before,
+  &:after {
     @media (max-width: $md) {
       display: none;
     }

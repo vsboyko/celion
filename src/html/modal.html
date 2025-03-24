@@ -1,12 +1,42 @@
 <div class="popup" data-popup="popup-form" data-close-overlay>
   <div class="popup__wrapper" data-close-overlay>
-    <div class="popup__content popup__content--theme-black popup__content--size-md">
+    <div class="popup__content">
       <button type="button" class="js-button-close popup__btn-close">
         <svg class="u-icon btn-close__icon">
           <use xlink:href="images/icons/icons.svg#close"></use>
         </svg>
       </button>
-      
+      <div class="popup__main">
+        <p class="title fs-6 popup__title">Обратный звонок</p>
+        <p class="popup__description">Оставьте Ваши данные и мы свяжемся с&nbsp;Вами в ближайшее время.</p>
+        <form action="#" class="popup__form">
+          <input type="text" name="name" class="js-phone-mask u-input u-input--size-md u-input--type-textarea u-input--theme-white-light popup__input" placeholder="Как к Вам обращаться?">
+          <input type="tel" name="phone" class="js-phone-mask u-input u-input--size-md u-input--type-textarea u-input--theme-white-light popup__input" required placeholder="Номер Вашего телефона*">
+          <button type="submit" class="btn btn--theme-accent-gradient btn--size-md popup__btn">
+            <span class="btn__inner">
+              <span class="btn__title">Заказать звонок</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup" data-popup="popup-thanks" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button type="button" class="js-button-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__main">
+        <div class="thanks-message">
+          <p class="title fs-6 thanks-message__title">Спасибо за заявку!</p>
+          <p class="thanks-message__description">Мы свяжемся с Вами в ближайшее время</p>
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 204" class="thanks-message__icon"><g clip-path="url(#a)"><path d="M102 204a102 102 0 1 0 0-204 102 102 0 0 0 0 204" fill="url(#b)"/><path d="M204 103.8a102 102 0 0 1-72.4 95.8l-58.1-58.1L160 60z" fill="url(#c)"/><path d="M164.2 69.8a14 14 0 0 1-4.1 9.8L95.6 144a14 14 0 0 1-19.6 0l-32-32a13.9 13.9 0 1 1 19.6-19.7l22.3 22.3L140.5 60a13.9 13.9 0 0 1 23.7 9.8" fill="#fff"/></g><defs><linearGradient id="b" x1="-5.8" y1="0" x2="257.3" y2="223" gradientUnits="userSpaceOnUse"><stop stop-color="#2D5DFF"/><stop offset="1" stop-color="#F51AD6"/></linearGradient><linearGradient id="c" x1="69.8" y1="60" x2="247.5" y2="200.8" gradientUnits="userSpaceOnUse"><stop stop-color="#2D5DFF"/><stop offset="1" stop-color="#F51AD6"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h204v204H0z"/></clipPath></defs></svg>
+        </div>
+      </div>
     </div>
   </div>
 </div>
