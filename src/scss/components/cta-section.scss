@@ -35,6 +35,10 @@
     margin-bottom: var(--gap-);
     textarea {
       min-height: 180rem;
+      @media (max-width: $md) {
+        min-height: 140rem;
+        max-height: 400px;
+      }
     }
     .btn {
     }

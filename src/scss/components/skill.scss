@@ -1,0 +1,27 @@
+.skill {
+  padding: var(--section-y) 0;
+  position: relative;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 30rem;
+    @media (max-width: $md) {
+      margin-bottom: 15rem;
+    }
+  }
+  &__row {
+    @media (max-width: $md) {
+      margin-bottom: var(--gap-container-);
+    }
+    &-col {
+      @media (max-width: $md) {
+        max-width: 100%;
+        margin-bottom: var(--gap-container);
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

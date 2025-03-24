@@ -8,6 +8,7 @@ export default function InitSliders() {
   let workSchemeNavSwiper = null;
   let reviewsSwiper = null;
   let howWeWorkSwiper = null;
+  let webSectionSwiper = null;
 
   function initWorkSchemeSlider() {
     const workSchemeSlider = document.querySelector('.js-work-scheme-slider-init');
@@ -114,6 +115,35 @@ export default function InitSliders() {
     }
   }
 
+  function initWebSectionSlider() {
+    const webSectionSlider = document.querySelector('.js-web-section-slider-init');
+
+    if (!webSectionSlider) return;
+
+    if (webSectionSwiper) {
+      webSectionSwiper.destroy();
+      webSectionSwiper = null;
+    }
+
+    webSectionSwiper = new Swiper(webSectionSlider, {
+      loop: true,
+      spaceBetween: 16,
+      watchSlidesProgress: true,
+      navigation: {
+        prevEl: '.js-web-slider-btn-prev',
+        nextEl: '.js-web-slider-btn-next',
+      },
+      breakpoints: {
+        992: {
+          slidesPerView: 4,
+        },
+        0: {
+          slidesPerView: 'auto',
+        },
+      },
+    });
+  }
+
   function updateActiveNavSlide(index) {
     const workSchemeNavSlider = document.querySelector('.js-work-scheme-slider-nav-init');
 
@@ -139,6 +169,7 @@ export default function InitSliders() {
   initWorkSchemeSlider();
   initReviewsSlider();
   initHowWeWorkSlider();
+  initWebSectionSlider();
 
   const mediaQuery = window.matchMedia('(max-width: 768px)');
   mediaQuery.addEventListener('change', () => {

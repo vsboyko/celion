@@ -1,0 +1,24 @@
+.layout {
+  padding: 220rem 0 calc(var(--section-y) * 4);
+  position: relative;
+  @media (max-width: $md) {
+    padding-top: 140rem;
+    padding-bottom: var(--section-y);
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 30rem;
+    @media (max-width: $md) {
+      margin-bottom: 15rem;
+    }
+  }
+  &__description {
+    font-weight: 500;
+    font-size: var(--fs-17);
+    line-height: 1.21428571429;
+    @media (max-width: $md) {
+      font-size: 14rem;
+    }
+  }
+}

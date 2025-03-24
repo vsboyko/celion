@@ -1,0 +1,74 @@
+.web-section {
+  padding: var(--section-y) 0;
+  position: relative;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 30rem;
+    @media (max-width: $md) {
+      margin-bottom: 15rem;
+    }
+  }
+  &__slider {
+    background: rgba($whiteColor, .1);
+    padding: 70rem 170rem;
+    border-radius: $radiusXl;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: $md) {
+      max-width: 100%;
+      padding: 20rem;
+      flex-basis: 100%;
+      border-radius: 10rem;
+    }
+    .swiper {
+      max-width: 1000rem;
+      overflow: visible;
+      &-wrapper {
+        @media (min-width: $lg-mf) {
+        }
+      }
+      &-slide {
+        transform-origin: top;
+        transition: $transition;
+        transition-property: transform, opacity, visibility;
+        @media (min-width: $lg-mf) {
+        }
+        @media (max-width: $md) {
+          width: auto;
+        }
+        &:not(.swiper-slide-visible) {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:nth-child(4n+4) {
+          @media (min-width: $lg-mf) {
+            transform: rotate(-12deg);
+          }
+        }
+      }
+      &-button {
+        margin-top: -24rem;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        &-prev {
+          left: 60rem;
+          @media (max-width: $md) {
+            left: var(--gap);
+          }
+        }
+        &-next {
+          right: 60rem;
+          @media (max-width: $md) {
+            right: var(--gap);
+          }
+        }
+      }
+    }
+    &-slide {
+    }
+    &-card {
+    }
+  }
+}

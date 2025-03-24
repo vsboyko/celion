@@ -57,6 +57,13 @@
       bottom: -172rem;
       transform: rotate(23.5deg);
       z-index: -1;
+      @media (max-width: $md) {
+        width: 280rem;
+        margin-right: 0;
+        right: -68rem;
+        top: 276rem;
+        bottom: initial;
+      }
     }
   }
   &__container {
@@ -78,7 +85,7 @@
     flex-direction: column;
     @media (max-width: $md) {
       margin-top: 0;
-      padding-bottom: 150rem;
+      padding-bottom: 380rem;
     }
   }
   &__title-wrapper {
@@ -207,33 +214,42 @@
     }
   }
   &__planet {
+    @extend %img-contain;
     width: 100%;
-    max-width: 1242rem;
-    position: absolute;
-    top: -220rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -4;
+    margin: 0 auto;
+    padding: 0 0 26%;
+    height: auto;
+    display: block;
     @media (max-width: $md) {
-      margin: 0 -36rem;
+      padding-bottom: 24%;
+    }
+    &-wrapper {
+      width: 100%;
+      max-width: 1242rem;
+      position: absolute;
+      top: -120rem;
+      left: 50%;
+      transform: translateX(-50%);
       pointer-events: none;
       user-select: none;
       overflow: hidden;
-      position: relative;
+      z-index: -4;
+      @media (max-width: $md) {
+        width: 150%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
     img {
       @media (max-width: $md) {
-        width: 100%;
-        height: auto;
-        margin-bottom: -122rem;
-        display: block;
-        position: relative;
-        top: 5rem;
-        transform: rotate(-63deg);
       }
     }
   }
   &__list {
+    width: 100%;
     max-width: 1290rem;
     margin: 0 auto -218rem;
     position: relative;

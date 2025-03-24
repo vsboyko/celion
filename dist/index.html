@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250324185211">
   <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
@@ -18,7 +18,7 @@
     <div id="root" class="site">
       <div class="site__pattern-bg"></div>
       <div class="site__inner">
-        <!-- header BEGIN -->
+        
         <header class="header js-header-sticky site__header">
   <div class="container container--size-md header__container">
     <div class="header__inner">
@@ -97,42 +97,33 @@
     </div>
   </div>
 </header>
-        <!-- header END -->
+        
         <main role="main" class="site__main">
-          <!-- intro BEGIN -->
-          <section class="fadeIn intro wow">
-            <picture class="intro__bg">
-              <!--<source
-                srcset="images/intro-bg-991.webp"
-                type="image/webp"
-                media="(max-width: 991px)">-->
+          
+          <section class="intro">
+            <picture class="css-animated intro__bg">
+              <source srcset="images/intro-bg-991.webp" type="image/webp" media="(max-width: 991px)">
               <source srcset="images/intro-bg-991.jpg" media="(max-width: 991px)">
-              <!--<source
-                srcset="images/intro-bg.webp"
-                type="image/webp">-->
+              <source srcset="images/intro-bg.webp" type="image/webp">
               <img src="images/intro-bg.jpg" alt="Celion — где технологии встречаются с безопасностью" width="1920" height="1080">
             </picture>
-            <picture class="u-decor intro__hero intro__hero--1">
-              <!--<source
-                srcset="images/hero-1.webp"
-                type="image/webp">-->
+            <picture class="u-decor css-animated intro__hero intro__hero--1">
+              <source srcset="images/hero-1.webp" type="image/webp">
               <img src="images/hero-1.png" alt="" width="390" height="496">
             </picture>
-            <picture class="u-decor intro__hero intro__hero--2">
-              <!--<source
-                srcset="images/hero-2.webp"
-                type="image/webp">-->
+            <picture class="u-decor css-animated intro__hero intro__hero--2">
+              <source srcset="images/hero-2.webp" type="image/webp">
               <img src="images/hero-2.png" alt="" width="596" height="898">
             </picture>
             <div class="container container--size-md intro__container">
               <div class="intro__content">
                 <div class="intro__title-wrapper">
-                  <h1 class="intro__title">Где технологии<br><span>встречаются с безопасностью:</span></h1>
-                  <p class="intro__title-description">от первой строчки<br>кода до надёжной<br>защиты</p>
+                  <h1 class="css-animated intro__title">Где технологии<br><span>встречаются с безопасностью:</span></h1>
+                  <p class="css-animated intro__title-description">от первой строчки<br>кода до надёжной<br>защиты</p>
                 </div>
-                <h2 class="intro__suptitle">дизайн, разработка и&nbsp;безопасность</h2>
-                <footer class="intro__footer">
-                  <button type="button" class="d-md-block intro__footer-btn-mobile">
+                <h2 class="css-animated intro__suptitle">дизайн, разработка и&nbsp;безопасность</h2>
+                <footer class="css-animated intro__footer">
+                  <button type="button" class="intro__footer-btn-mobile d-md-block">
                     <span>Креативный подход к<br>цифровому успеху</span>
                   </button>
                   <button type="button" class="btn btn--size-md btn--theme-accent-gradient-2 d-md-none intro__footer-btn">
@@ -144,13 +135,13 @@
                 </footer>
               </div>
               <div class="intro__list">
-                <picture class="intro__planet">
-                  <!--<source
-                    srcset="images/earth.webp"
-                    type="image/webp">-->
-                  <img src="images/earth.png" alt="Мы делаем IT-прорыв" width="1242" height="1282">
-                </picture>
-                <div class="row intro__list-row">
+                <div class="intro__planet-wrapper">
+                  <picture class="css-animated intro__planet">
+                    <source srcset="images/earth.webp" type="image/webp">
+                    <img src="images/earth.png" alt="Мы делаем IT-прорыв" width="1242" height="1282">
+                  </picture>
+                </div>
+                <div class="css-animated intro__list-row row">
                   <div class="row__col--6 intro__list-col">
                     <article class="about-card intro__list-card">
                       <div class="about-card__inner">
@@ -189,18 +180,16 @@
               </div>
             </div>
           </section>
-          <!-- intro END -->
-          <!-- how-we-work BEGIN -->
+          
+          
           <section class="how-we-work">
-            <picture class="u-decor how-we-work__hero how-we-work__hero--1">
-              <!--<source
-                srcset="images/hero-1.webp"
-                type="image/webp">-->
+            <picture class="fadeIn wow u-decor how-we-work__hero how-we-work__hero--1" data-wow-delay=".2s">
+              <source srcset="images/hero-1.webp" type="image/webp">
               <img src="images/hero-1.png" alt="" width="390" height="496">
             </picture>
             <div class="container container--size-md how-we-work__container">
-              <h2 class="u-title how-we-work__title"><span>Как</span> мы работаем</h2>
-              <div class="how-we-work__list">
+              <h2 class="fadeIn wow u-title how-we-work__title" data-wow-delay=".2s"><span>Как</span> мы работаем</h2>
+              <div class="fadeIn wow how-we-work__list" data-wow-delay=".4s">
                 <div class="swiper js-how-we-work-slider-init">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide how-we-work__list-slide">
@@ -247,24 +236,24 @@
               </div>
             </div>
           </section>
-          <!-- how-we-work END -->
-          <!-- portfolio BEGIN -->
+          
+          
           <section id="portfolio" class="portfolio">
-            <picture class="portfolio__bg u-bg">
+            <picture class="fadeIn wow portfolio__bg u-bg" data-wow-delay=".2s">
               <img src="images/portfolio-bg.svg" width="1920" height="1817" alt="Портфолио и кейсы">
             </picture>
             <picture class="u-decor portfolio__decor portfolio__decor--1">
               <img src="images/decor-1.svg" alt="" width="2270" height="3454">
             </picture>
             <div class="container container--size-md portfolio__container">
-              <h2 class="u-title portfolio__title">Портфолио и <span>кейсы</span></h2>
+              <h2 class="fadeIn wow u-title portfolio__title" data-wow-delay=".2s">Портфолио и <span>кейсы</span></h2>
               <div class="portfolio__list">
                 <div class="row portfolio__list-row">
-                  <div class="row__col--6 portfolio__list-col">
+                  <div class="fadeIn wow portfolio__list-col row__col--6" data-wow-delay=".4s">
                     <article class="portfolio-card portfolio__list-card">
                       <div class="portfolio-card__media">
                         <picture class="portfolio-card__picture">
-                          <!--<source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp 1x" type="image/webp">-->
+                          <source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp" type="image/webp">
                           <source srcset="images/portfolio-card-1@2x.png 2x, images/portfolio-card-1.png" type="image/png">
                           <img src="images/portfolio-card-1.png" width="480" height="104" alt="TopBrains">
                         </picture>
@@ -279,11 +268,11 @@
                       </div>
                     </article>
                   </div>
-                  <div class="row__col--6 portfolio__list-col">
+                  <div class="fadeIn wow portfolio__list-col row__col--6" data-wow-delay=".6s">
                     <article class="portfolio-card portfolio__list-card">
                       <div class="portfolio-card__media">
                         <picture class="portfolio-card__picture">
-                          <!--<source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp 1x" type="image/webp">-->
+                          <source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp" type="image/webp">
                           <source srcset="images/portfolio-card-1@2x.png 2x, images/portfolio-card-1.png" type="image/png">
                           <img src="images/portfolio-card-1.png" width="480" height="104" alt="TopBrains">
                         </picture>
@@ -298,11 +287,11 @@
                       </div>
                     </article>
                   </div>
-                  <div class="row__col--6 portfolio__list-col">
+                  <div class="fadeIn wow portfolio__list-col row__col--6" data-wow-delay=".2s">
                     <article class="portfolio-card portfolio__list-card">
                       <div class="portfolio-card__media">
                         <picture class="portfolio-card__picture">
-                          <!--<source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp 1x" type="image/webp">-->
+                          <source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp" type="image/webp">
                           <source srcset="images/portfolio-card-1@2x.png 2x, images/portfolio-card-1.png" type="image/png">
                           <img src="images/portfolio-card-1.png" width="480" height="104" alt="TopBrains">
                         </picture>
@@ -317,11 +306,11 @@
                       </div>
                     </article>
                   </div>
-                  <div class="row__col--6 portfolio__list-col">
+                  <div class="fadeIn wow portfolio__list-col row__col--6" data-wow-delay=".4s">
                     <article class="portfolio-card portfolio__list-card">
                       <div class="portfolio-card__media">
                         <picture class="portfolio-card__picture">
-                          <!--<source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp 1x" type="image/webp">-->
+                          <source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp" type="image/webp">
                           <source srcset="images/portfolio-card-1@2x.png 2x, images/portfolio-card-1.png" type="image/png">
                           <img src="images/portfolio-card-1.png" width="480" height="104" alt="TopBrains">
                         </picture>
@@ -336,11 +325,11 @@
                       </div>
                     </article>
                   </div>
-                  <div class="row__col--6 portfolio__list-col">
+                  <div class="fadeIn wow portfolio__list-col row__col--6" data-wow-delay=".2s">
                     <article class="portfolio-card portfolio__list-card">
                       <div class="portfolio-card__media">
                         <picture class="portfolio-card__picture">
-                          <!--<source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp 1x" type="image/webp">-->
+                          <source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp" type="image/webp">
                           <source srcset="images/portfolio-card-1@2x.png 2x, images/portfolio-card-1.png" type="image/png">
                           <img src="images/portfolio-card-1.png" width="480" height="104" alt="TopBrains">
                         </picture>
@@ -355,11 +344,11 @@
                       </div>
                     </article>
                   </div>
-                  <div class="row__col--6 portfolio__list-col">
+                  <div class="fadeIn wow portfolio__list-col row__col--6" data-wow-delay=".4s">
                     <article class="portfolio-card portfolio__list-card">
                       <div class="portfolio-card__media">
                         <picture class="portfolio-card__picture">
-                          <!--<source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp 1x" type="image/webp">-->
+                          <source srcset="images/portfolio-card-1@2x.webp 2x, images/portfolio-card-1.webp" type="image/webp">
                           <source srcset="images/portfolio-card-1@2x.png 2x, images/portfolio-card-1.png" type="image/png">
                           <img src="images/portfolio-card-1.png" width="480" height="104" alt="TopBrains">
                         </picture>
@@ -376,7 +365,7 @@
                   </div>
                 </div>
               </div>
-              <footer class="portfolio__footer">
+              <footer class="fadeIn wow portfolio__footer" data-wow-delay=".4s">
                 <a href="#" class="btn btn--size-md btn--theme-accent-gradient portfolio__footer-btn">
                   <span class="btn__inner">
                     <span class="btn__title">Все работы</span>
@@ -385,8 +374,8 @@
               </footer>
             </div>
           </section>
-          <!-- portfolio END -->
-          <!-- price-calculation BEGIN -->
+          
+          
           <section class="price-calculation shadow-bottom">
             <picture class="u-decor price-calculation__decor price-calculation__decor--1">
               <img src="images/decor-1.svg" alt="" width="2270" height="3454">
@@ -395,40 +384,36 @@
               <img src="images/decor-1.svg" alt="" width="2270" height="3454">
             </picture>
             <div class="container container--size-md price-calculation__container">
-              <h2 class="u-title price-calculation__title">Расcчитайте <strong class="u-word-accent">стоимость</strong> развития вашего <span>проекта</span></h2>
-              <div class="u-content price-calculation__description">
+              <h2 class="fadeIn wow u-title price-calculation__title" data-wow-delay=".2s">Расcчитайте <strong class="u-word-accent">стоимость</strong> развития вашего <span>проекта</span></h2>
+              <div class="fadeIn wow u-content price-calculation__description" data-wow-delay=".4s">
                 <p>За 3 дня подготовим план точечных улучшений (от дизайна и&nbsp;функционала до безопасности), который может повысить эффективность&nbsp;на 30–50% уже в первый месяц.</p>
               </div>
-              <footer class="price-calculation__footer">
+              <footer class="fadeIn wow price-calculation__footer" data-wow-delay=".4s">
                 <a href="#" class="btn btn--size-md btn--theme-accent-gradient price-calculation__footer-btn">
                   <span class="btn__inner">
                     <span class="btn__title">Рассчитать стоимость</span>
                   </span>
                 </a>
               </footer>
-              <picture class="price-calculation__hero">
-                <!--<source
-                  srcset="images/price-calculation.webp"
-                  type="image/webp">-->
+              <picture class="fadeIn wow price-calculation__hero" data-wow-delay=".2s">
+                <source srcset="images/price-calculation.webp" type="image/webp">
                 <img src="images/price-calculation.png" alt="Расчитайте стоимость развития вашего проекта" width="1920" height="804">
               </picture>
             </div>
           </section>
-          <!-- price-calculation END -->
-          <!-- services BEGIN -->
+          
+          
           <section class="shadow-y services">
-            <picture class="u-decor d-md-block services__hero services__hero--1">
-              <!--<source
-                srcset="images/hero-1.webp"
-                type="image/webp">-->
+            <picture class="fadeIn wow u-decor d-md-block services__hero services__hero--1" data-wow-delay=".2s">
+              <source srcset="images/hero-1.webp" type="image/webp">
               <img src="images/hero-1.png" alt="" width="390" height="496">
             </picture>
             <div class="container container--size-md services__container">
-              <h2 class="u-title services__title">Разработка <span class="u-word-accent">под ключ</span> с&nbsp;полным сопровождением</h2>
-              <div class="u-content services__description">
+              <h2 class="fadeIn wow u-title services__title" data-wow-delay=".2s">Разработка <span class="u-word-accent">под ключ</span> с&nbsp;полным сопровождением</h2>
+              <div class="fadeIn wow u-content services__description" data-wow-delay=".4s">
                 <p>Создаём надёжные сифровые решения: сайты, мобилъные придложения и IT-инфраструктуру с гарантией стабилъности, безопасности и производителъности.</p>
               </div>
-              <ul class="list-circle services__list">
+              <ul class="fadeIn wow list-circle services__list" data-wow-delay=".4s">
                 <li>Разработка дизайна и UX/UI -прототипа</li>
                 <li>Разработка кода (&nbsp;Frontend и Backend )</li>
                 <li>Технический аудит и проверка на&nbsp;уязвимости</li>
@@ -437,32 +422,28 @@
               </ul>
             </div>
           </section>
-          <!-- services END -->
-          <!-- benefits BEGIN -->
+          
+          
           <section class="shadow-y benefits">
-            <picture class="u-decor benefits__hero benefits__hero--1">
-              <!--<source
-                srcset="images/hero-1.webp"
-                type="image/webp">-->
+            <picture class="fadeIn wow u-decor benefits__hero benefits__hero--1" data-wow-delay=".2s">
+              <source srcset="images/hero-1.webp" type="image/webp">
               <img src="images/hero-1.png" alt="" width="390" height="496">
             </picture>
-            <picture class="d-md-none benefits__bg">
-              <!--<source
-                srcset="images/benefits-bg.webp"
-                type="image/webp">-->
+            <picture class="fadeIn wow d-md-none benefits__bg" data-wow-delay=".2s">
+              <source srcset="images/benefits-bg.webp" type="image/webp">
               <img src="images/benefits-bg.png" alt="Что дают бизнесу комплексные IT-решения" width="1920" height="1080">
             </picture>
             <div class="container container--size-md benefits__container">
               <div class="row benefits__row">
                 <div class="benefits__col benefits__col--header row__col--8">
                   <header class="benefits__header">
-                    <h2 class="u-title benefits__title">Что дают <span>бизнесу</span> комплексные <strong>IT-решения</strong></h2>
-                    <div class="u-content benefits__description">
+                    <h2 class="fadeIn wow u-title benefits__title" data-wow-delay=".2s">Что дают <span>бизнесу</span> комплексные <strong>IT-решения</strong></h2>
+                    <div class="fadeIn wow u-content benefits__description" data-wow-delay=".4s">
                       <p>Современный бизнес требует продуманных цифровых инструментов — от удобного веб-сайта или мобильного приложения до надёжной инфраструктуры и&nbsp;защиты данных. Мы предлагаем полный цикл разработки и&nbsp;поддержки, чтобы помочь компаниям масштабироваться, укреплять доверие клиентов и&nbsp;увеличивать доход.</p>
                     </div>
                   </header>
                 </div>
-                <div class="row__col--4 benefits__col benefits__col--card">
+                <div class="fadeIn wow row__col--4 benefits__col benefits__col--card" data-wow-delay=".6s">
                   <article class="u-box benefits-card benefits__card">
                     <div class="benefits-card__inner">
                       <header class="benefits-card__header">
@@ -479,7 +460,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="row__col--4 benefits__col benefits__col--card">
+                <div class="fadeIn wow row__col--4 benefits__col benefits__col--card" data-wow-delay=".7s">
                   <article class="u-box benefits-card benefits__card">
                     <div class="benefits-card__inner">
                       <header class="benefits-card__header">
@@ -496,7 +477,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="row__col--4 benefits__col benefits__col--card">
+                <div class="fadeIn wow row__col--4 benefits__col benefits__col--card" data-wow-delay=".8s">
                   <article class="u-box benefits-card benefits__card">
                     <div class="benefits-card__inner">
                       <header class="benefits-card__header">
@@ -513,7 +494,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="row__col--4 benefits__col benefits__col--card">
+                <div class="fadeIn wow row__col--4 benefits__col benefits__col--card" data-wow-delay=".9s">
                   <article class="u-box benefits-card benefits__card">
                     <div class="benefits-card__inner">
                       <header class="benefits-card__header">
@@ -533,8 +514,8 @@
               </div>
             </div>
           </section>
-          <!-- benefits END -->
-          <!-- appeal BEGIN -->
+          
+          
           <section class="shadow-top appeal">
             <picture class="u-decor appeal__decor appeal__decor--1">
               <img src="images/decor-1.svg" alt="" width="2270" height="3454">
@@ -542,19 +523,19 @@
             <div class="container container--size-md appeal__container">
               <div class="row appeal__row">
                 <div class="appeal__col row__col--7 appeal__col--title">
-                  <h2 class="u-title appeal__title">Узнайте, какой<br><strong class="u-word-accent">IT-подход</strong> выведет ваш&nbsp;бизнес на новый уровень</h2>
+                  <h2 class="fadeIn wow u-title appeal__title" data-wow-delay=".2s">Узнайте, какой<br><strong class="u-word-accent">IT-подход</strong> выведет ваш&nbsp;бизнес на новый уровень</h2>
                 </div>
-                <div class="appeal__col row__col--5 appeal__col--hero">
+                <div class="fadeIn wow appeal__col row__col--5 appeal__col--hero" data-wow-delay=".4s">
                   <picture class="appeal__hero">
                     <img src="images/appeal-hero.svg" alt="Узнайте, какой IT-подход выведет ваш бизнес на новый уровень" width="440" height="470">
                   </picture>
                 </div>
-                <div class="appeal__col row__col--5 appeal__col--description">
+                <div class="fadeIn wow appeal__col row__col--5 appeal__col--description" data-wow-delay=".5s">
                   <div class="u-content appeal__description">
                     <p>Хотите понять, принесет ли вашему проекту пользу комплексная разработка, аудит безопасности и DevSecOps?</p>
                   </div>
                 </div>
-                <div class="appeal__col row__col--7 appeal__col--footer">
+                <div class="fadeIn wow appeal__col appeal__col--footer row__col--7" data-wow-delay=".6s">
                   <footer class="appeal__footer">
                     <button type="button" class="btn btn--size-md btn--theme-accent-gradient appeal__footer-btn">
                       <span class="btn__inner">
@@ -566,18 +547,18 @@
               </div>
             </div>
           </section>
-          <!-- appeal END -->
-          <!-- faq BEGIN -->
+          
+          
           <section class="faq">
             <picture class="u-decor faq__decor faq__decor--1">
               <img src="images/decor-1.svg" alt="" width="2270" height="3454">
             </picture>
             <div class="container container--size-md faq__container">
-              <h2 class="u-title faq__title">Как мы работаем:<br><span>важные вопросы</span> и <span>ответы</span></h2>
-              <div class="u-content faq__description">
+              <h2 class="fadeIn wow u-title faq__title" data-wow-delay=".2s">Как мы работаем:<br><span>важные вопросы</span> и <span>ответы</span></h2>
+              <div class="fadeIn wow u-content faq__description" data-wow-delay=".4s">
                 <p>Рассказываем про наиболее часто встречающиеся боли и&nbsp;проблемы наших клиентов</p>
               </div>
-              <div itemscope itemtype="https://schema.org/FAQPage" class="faq__list">
+              <div itemscope itemtype="https://schema.org/FAQPage" class="fadeIn wow faq__list" data-wow-delay=".6s">
                 <article class="faq-card faq__list-card is-show" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="faq-card__header">
                     <p class="faq-card__counter"></p>
@@ -661,21 +642,19 @@
               </div>
             </div>
           </section>
-          <!-- faq END -->
-          <!-- reviews BEGIN -->
+          
+          
           <section class="reviews">
-            <picture class="u-decor reviews__hero reviews__hero--1">
-              <!--<source
-                srcset="images/hero-1.webp"
-                type="image/webp">-->
+            <picture class="fadeIn wow u-decor reviews__hero reviews__hero--1" data-wow-delay=".2s">
+              <source srcset="images/hero-1.webp" type="image/webp">
               <img src="images/hero-1.png" alt="" width="390" height="496">
             </picture>
-            <picture class="u-decor reviews__decor reviews__decor--1">
+            <picture class="fadeIn wow u-decor reviews__decor reviews__decor--1" data-wow-delay=".2s">
               <img src="images/decor-2.svg" alt="" width="1920" height="1236">
             </picture>
             <div class="container container--size-md reviews__container">
-              <h2 class="u-title reviews__title">Клиенты о <span>нас</span></h2>
-              <div class="reviews__slider-wrapper">
+              <h2 class="fadeIn wow u-title reviews__title" data-wow-delay=".2s">Клиенты о <span>нас</span></h2>
+              <div class="fadeIn wow reviews__slider-wrapper" data-wow-delay=".4s">
                 <div class="reviews__slider">
                   <div class="swiper js-reviews-slider-init">
                     <div class="swiper-wrapper">
@@ -683,7 +662,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-1@2x.webp 2x, images/reviews-card-1.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-1@2x.webp 2x, images/reviews-card-1.webp" type="image/webp">
                               <source srcset="images/reviews-card-1@2x.jpg 2x, images/reviews-card-1.jpg" type="image/jpeg">
                               <img src="images/reviews-card-1.jpg" width="54" height="54" alt="Yulia Mosunova">
                             </picture>
@@ -703,7 +682,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-2@2x.webp 2x, images/reviews-card-2.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-2@2x.webp 2x, images/reviews-card-2.webp" type="image/webp">
                               <source srcset="images/reviews-card-2@2x.jpg 2x, images/reviews-card-2.jpg" type="image/jpeg">
                               <img src="images/reviews-card-2.jpg" width="54" height="54" alt="Elena Goldman">
                             </picture>
@@ -723,7 +702,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-3@2x.webp 2x, images/reviews-card-3.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-3@2x.webp 2x, images/reviews-card-3.webp" type="image/webp">
                               <source srcset="images/reviews-card-3@2x.jpg 2x, images/reviews-card-3.jpg" type="image/jpeg">
                               <img src="images/reviews-card-3.jpg" width="54" height="54" alt="Elena Isaeva">
                             </picture>
@@ -743,7 +722,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-4@2x.webp 2x, images/reviews-card-4.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-4@2x.webp 2x, images/reviews-card-4.webp" type="image/webp">
                               <source srcset="images/reviews-card-4@2x.jpg 2x, images/reviews-card-4.jpg" type="image/jpeg">
                               <img src="images/reviews-card-4.jpg" width="54" height="54" alt="Anastasia Kaysina">
                             </picture>
@@ -763,7 +742,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-5@2x.webp 2x, images/reviews-card-5.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-5@2x.webp 2x, images/reviews-card-5.webp" type="image/webp">
                               <source srcset="images/reviews-card-5@2x.jpg 2x, images/reviews-card-5.jpg" type="image/jpeg">
                               <img src="images/reviews-card-5.jpg" width="54" height="54" alt="Yulia Botalova">
                             </picture>
@@ -783,7 +762,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-6@2x.webp 2x, images/reviews-card-6.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-6@2x.webp 2x, images/reviews-card-6.webp" type="image/webp">
                               <source srcset="images/reviews-card-6@2x.jpg 2x, images/reviews-card-6.jpg" type="image/jpeg">
                               <img src="images/reviews-card-6.jpg" width="54" height="54" alt="Viktoria Volkhonskaya">
                             </picture>
@@ -803,7 +782,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-7@2x.webp 2x, images/reviews-card-7.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-7@2x.webp 2x, images/reviews-card-7.webp" type="image/webp">
                               <source srcset="images/reviews-card-7@2x.jpg 2x, images/reviews-card-7.jpg" type="image/jpeg">
                               <img src="images/reviews-card-7.jpg" width="54" height="54" alt="Mikhail Sitnikov">
                             </picture>
@@ -823,7 +802,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-8@2x.webp 2x, images/reviews-card-8.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-8@2x.webp 2x, images/reviews-card-8.webp" type="image/webp">
                               <source srcset="images/reviews-card-8@2x.jpg 2x, images/reviews-card-8.jpg" type="image/jpeg">
                               <img src="images/reviews-card-8.jpg" width="54" height="54" alt="Armor Knight">
                             </picture>
@@ -843,7 +822,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-9@2x.webp 2x, images/reviews-card-9.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-9@2x.webp 2x, images/reviews-card-9.webp" type="image/webp">
                               <source srcset="images/reviews-card-9@2x.jpg 2x, images/reviews-card-9.jpg" type="image/jpeg">
                               <img src="images/reviews-card-9.jpg" width="54" height="54" alt="Elena Isaeva">
                             </picture>
@@ -863,7 +842,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-10@2x.webp 2x, images/reviews-card-10.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-10@2x.webp 2x, images/reviews-card-10.webp" type="image/webp">
                               <source srcset="images/reviews-card-10@2x.jpg 2x, images/reviews-card-10.jpg" type="image/jpeg">
                               <img src="images/reviews-card-10.jpg" width="54" height="54" alt="Anna Makhmutova">
                             </picture>
@@ -883,7 +862,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-11@2x.webp 2x, images/reviews-card-11.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-11@2x.webp 2x, images/reviews-card-11.webp" type="image/webp">
                               <source srcset="images/reviews-card-11@2x.jpg 2x, images/reviews-card-11.jpg" type="image/jpeg">
                               <img src="images/reviews-card-11.jpg" width="54" height="54" alt="Kirill Sysoev">
                             </picture>
@@ -903,7 +882,7 @@
                         <div class="u-box reviews-card reviews__slider-card">
                           <header class="reviews-card__header">
                             <picture class="reviews-card__picture">
-                              <!--<source srcset="images/reviews-card-12@2x.webp 2x, images/reviews-card-12.webp 1x" type="image/webp">-->
+                              <source srcset="images/reviews-card-12@2x.webp 2x, images/reviews-card-12.webp" type="image/webp">
                               <source srcset="images/reviews-card-12@2x.jpg 2x, images/reviews-card-12.jpg" type="image/jpeg">
                               <img src="images/reviews-card-12.jpg" width="54" height="54" alt="Elena Isaeva">
                             </picture>
@@ -925,19 +904,17 @@
               </div>
             </div>
           </section>
-          <!-- reviews END -->
-          <!-- work-scheme BEGIN -->
+          
+          
           <section class="shadow-y work-scheme">
-            <picture class="d-md-none work-scheme__bg">
-              <!--<source
-                srcset="images/work-scheme-bg.webp"
-                type="image/webp">-->
+            <picture class="fadeIn wow d-md-none work-scheme__bg" data-wow-delay=".2s">
+              <source srcset="images/work-scheme-bg.webp" type="image/webp">
               <img src="images/work-scheme-bg.png" alt="Схема работы" width="1920" height="1080">
             </picture>
             <div class="container container--size-md work-scheme__container">
-              <h2 class="u-title work-scheme__title"><span>Схема</span> работы</h2>
+              <h2 class="fadeIn wow u-title work-scheme__title" data-wow-delay=".2s"><span>Схема</span> работы</h2>
               <div class="work-scheme__slider-wrapper">
-                <div class="work-scheme__slider-nav">
+                <div class="fadeIn wow work-scheme__slider-nav" data-wow-delay=".4s">
                   <div class="swiper js-work-scheme-slider-nav-init">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide work-scheme__slider-nav-slide" data-index="0">
@@ -993,7 +970,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="work-scheme__slider-main">
+                <div class="fadeIn wow work-scheme__slider-main" data-wow-delay=".6s">
                   <div class="swiper js-work-scheme-slider-init">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide work-scheme__slider-main-slide">
@@ -1112,14 +1089,14 @@
               </div>
             </div>
           </section>
-          <!-- work-scheme END -->
-          <!-- advantages BEGIN -->
+          
+          
           <section class="shadow-top advantages">
-            <div class="advantages__planet advantages__planet--1 u-planet u-planet--theme-1"></div>
+            <div class="fadeIn wow advantages__planet advantages__planet--1 u-planet u-planet--theme-1" data-wow-delay=".2s"></div>
             <div class="container container--size-md advantages__container">
               <h2 class="u-title advantages__title visually-hidden">Наши преимущества</h2>
               <div class="row advantages__list">
-                <div class="row__col--4 advantages__list-col">
+                <div class="fadeIn wow row__col--4 advantages__list-col" data-wow-delay=".4s">
                   <article class="u-box advantages-card advantages__list-card">
                     <div class="advantages-card__inner">
                       <header class="advantages-card__header">
@@ -1136,7 +1113,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="row__col--4 advantages__list-col">
+                <div class="fadeIn wow row__col--4 advantages__list-col" data-wow-delay=".5s">
                   <article class="u-box advantages-card advantages__list-card">
                     <div class="advantages-card__inner">
                       <header class="advantages-card__header">
@@ -1153,7 +1130,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="row__col--4 advantages__list-col">
+                <div class="fadeIn wow row__col--4 advantages__list-col" data-wow-delay=".6s">
                   <article class="u-box advantages-card advantages__list-card">
                     <div class="advantages-card__inner">
                       <header class="advantages-card__header">
@@ -1173,8 +1150,8 @@
               </div>
             </div>
           </section>
-          <!-- advantages END -->
-          <!-- cta-section BEGIN -->
+          
+          
           <section class="cta-section">
   <picture class="u-decor cta-section__decor cta-section__decor--1">
     <img src="images/decor-1.svg" alt="" width="2270" height="3454">
@@ -1222,14 +1199,12 @@
     </form>
   </div>
 </section>
-          <!-- cta-section END -->
+          
         </main>
-        <!-- footer BEGIN -->
+        
         <footer class="footer site__footer">
   <picture class="footer__bg">
-    <!--<source
-      srcset="images/footer-bg.webp"
-      type="image/webp">-->
+    
     <img src="images/footer-bg.jpg" alt="" width="1920" height="505">
   </picture>
   <div class="container container--size-md footer__container">
@@ -1288,7 +1263,7 @@
     <p class="footer__copyright">Celion © 2025. All rights reserved.</p>
   </div>
 </footer>
-        <!-- footer END -->
+        
       </div>
       <div class="popup" data-popup="popup-form" data-close-overlay>
   <div class="popup__wrapper" data-close-overlay>
@@ -1334,6 +1309,6 @@
 </div>
     </div>
 
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js??=v=20250324185211"></script>
   </body>
 </html>
