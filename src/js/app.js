@@ -15,7 +15,10 @@ import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import { SmoothScroll } from './modules/SmoothScroll.js';
 import { ToggleActiveClass } from './modules/toggleActiveClass.js';
 import PopupManager from './modules/PopupManager.js';
+import PhoneMask from './modules/PhoneMask.js';
+import PriceCalculator from './modules/PriceCalculator.js';
 import InitSliders from './modules/SwiperInit.js';
+import PdfViewer from './modules/PdfViewer.js';
 import FaqCard from './modules/FaqCard.js';
 import FileUploader from './modules/FileUploader.js';
 
@@ -39,8 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
   new HeaderBtnToggle();
   // modal init
   new PopupManager();
+  // mask phone
+  new PhoneMask('.js-phone-mask');
+  // price calculator
+  new PriceCalculator('.js-calculation-form', 20);
   // slider init
   InitSliders();
+  // pdf full screen
+  new PdfViewer('.js-open-pdf', '#pdfViewer');
   // faq card
   new FaqCard();
   // FileUploader

@@ -23,7 +23,7 @@
     }
   }
   &__description {
-    margin: 0 0 40rem;
+    margin: 0 0 60rem;
     line-height: $lineHeight4;
     color: rgba($whiteColor, .8);
     @media (max-width: $md) {
@@ -32,7 +32,11 @@
     }
   }
   &__form {
-    margin-bottom: var(--gap-);
+    --gap: 15rem;
+    --gap-: -15rem;
+    --gap-fluid: 30rem;
+    --gap-fluid-: -30rem;
+    margin-bottom: var(--gap-fluid-);
     textarea {
       min-height: 180rem;
       @media (max-width: $md) {
@@ -41,9 +45,14 @@
       }
     }
     .btn {
+      width: 100%;
+      border-radius: 22rem;
+      @media (max-width: $md) {
+        border-radius: 16rem;
+      }
     }
     &-col {
-      margin-bottom: var(--gap);
+      margin-bottom: var(--gap-fluid);
       @media (max-width: $md) {
         max-width: 100%;
         flex-basis: 100%;
@@ -64,6 +73,8 @@
         }
       }
       &--input {
+        @media (min-width: $md-mf) {
+        }
         @media (max-width: $md) {
           order: -2;
         }

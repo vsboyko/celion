@@ -241,13 +241,13 @@
       &:active {
         background: rgba($whiteColor, .25);
         &::placeholder {
-          opacity: .1;
+          opacity: .3;
         }
       }
       &::placeholder {
         color: inherit;
         transition: $transition;
-        opacity: .4;
+        opacity: 1;
       }
     }
   }
@@ -407,7 +407,7 @@
     }
   }
   h3 {
-    margin: 0 0 18rem;
+    margin: 1.2em 0 16rem;
     font-weight: bold;
     font-size: var(--fs-19);
     @media (max-width: $md) {
@@ -449,10 +449,10 @@
     }
     &:hover {
       .u-nav__link {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $md-mf) {
         }
         &:before {
-          @media (min-width: $lg-mf) {
+          @media (min-width: $md-mf) {
             transform: scaleX(1);
             opacity: 1;
             visibility: visible;
@@ -460,14 +460,14 @@
         }
       }
       .u-nav__btn-submenu {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $md-mf) {
           transform: rotate(180deg);
         }
       }
     }
     &:not(:hover) {
       .u-nav__dropdown {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $md-mf) {
           transform: translateY(10rem);
           opacity: 0;
           pointer-events: none;
@@ -475,7 +475,7 @@
         }
       }
       .u-nav__btn-submenu {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $md-mf) {
         }
       }
     }
@@ -569,7 +569,7 @@
       left: 0;
       transition: $transition;
       transition-property: transform, visibility, opacity;
-      z-index: -1;
+      z-index: 1;
     }
     &:before {
       background: $gradientAccent2;
@@ -640,7 +640,7 @@
     border-radius: $radiusSemi;
     transition: $transition;
     @media (max-width: $md) {
-      border-radius: 10rem;
+      border-radius: $radiusMd;
     }
   }
   &:before {
@@ -887,8 +887,8 @@
     &-desc {
       margin: 0;
       display: block;
-      font-size: var(--fs-14);
-      line-height: $lineHeight4;
+      font-size: var(--fs-13);
+      line-height: $lineHeight3;
       color: rgba($whiteColor, .8);
     }
   }
@@ -1000,8 +1000,28 @@
 
 .how-we-work-card {
   padding: 48rem 34rem 84rem;
+  position: relative;
   @media (max-width: $md) {
     padding: 20rem 16rem;
+  }
+  &:hover {
+    @media (min-width: $lg-mf) {
+    }
+    .how-we-work-card__picture svg path {
+      @media (min-width: $lg-mf) {
+        fill: $whiteColor;
+      }
+    }
+    .how-we-work-card__text {
+      @media (min-width: $lg-mf) {
+        color: $whiteColor;
+      }
+    }
+    .how-we-work-card__content:before {
+      @media (min-width: $lg-mf) {
+        color: rgba($whiteColor, 1) !important;
+      }
+    }
   }
   &__picture {
     @extend %img-contain;
@@ -1013,6 +1033,15 @@
       height: 32rem;
       margin-bottom: 12rem;
     }
+    img,
+    svg {
+    }
+    svg {
+      path {
+        transition: $transition;
+        transition-property: fill;
+      }
+    }
   }
   &.how-we-work__list-card {
     .how-we-work-card__content {
@@ -1021,9 +1050,12 @@
         font-weight: bold;
         font-size: var(--fs-9);
         line-height: 1;
+        color: rgba($whiteColor, .8);
         position: absolute;
         top: 20rem;
         right: 20rem;
+        transition: $transition;
+        transition-property: color;
         white-space: nowrap;
         @media (max-width: $md) {
           font-size: 11rem;
@@ -1044,9 +1076,21 @@
       font-size: 14rem;
     }
   }
+  &__link {
+    @extend %link-cover;
+    &:hover {
+      text-decoration: none;
+      @media (min-width: $lg-mf) {
+      }
+    }
+    @media (max-width: $md) {
+    }
+  }
   &__text {
     margin: 0 12rem 0 0;
     color: $greyMediumColor;
+    transition: $transition;
+    transition-property: color;
     @media (max-width: $md) {
       margin-right: 0;
     }
@@ -1177,7 +1221,7 @@
   &__inner {
     padding: 36rem;
     @media (max-width: $md) {
-      padding: 24rem 16rem;
+      padding: 30rem;
     }
   }
   &__header {
@@ -1246,9 +1290,7 @@
       text-fill-color: transparent;
     }
     .faq-card__title {
-      @media (min-width: $md-mf) {
-        box-shadow: inset 0 -9rem 0 $pinkLightColor;
-      }
+      background-size: 100% 100%;
     }
     .faq-card__icon {
       transform: rotate(180deg);
@@ -1290,13 +1332,18 @@
     }
   }
   &__title {
+    background-image: linear-gradient(0deg, $pinkLightColor 0, $pinkLightColor 9rem, rgba(255,229,123, 0) 0, rgba(255,229,123, 0));
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position: left -4rem;
+    hyphens: none;
     display: inline;
     font-weight: bold;
     font-size: var(--fs-7);
-    box-shadow: inset 0 0 0 $pinkLightColor;
-    transition: $transition;
-    transition-property: box-shadow;
+    transition: background-size .2s;
+    position: relative;
     @media (max-width: $md) {
+      background: none;
       font-size: 18rem;
     }
   }
@@ -1308,7 +1355,7 @@
     line-height: .8;
     color: transparent;
     -webkit-text-stroke: 1px $pinkColor;
-    text-shadow: 0 0 60px $pinkColor;
+    text-shadow: 0 0 60px rgba($pinkColor, .2);
     white-space: nowrap;
     @media (max-width: $md) {
       font-size: var(--fs-2);
@@ -1436,7 +1483,7 @@
 .advantages-card {
   padding: 34rem;
   @media (max-width: $md) {
-    padding: 24rem 16rem;
+    padding: 32rem 24rem;
   }
   &__inner {
   }
@@ -1450,7 +1497,7 @@
     @media (max-width: $md) {
       width: 90rem;
       height: 90rem;
-      margin-bottom: 16rem;
+      margin: -8rem 0 16rem auto;
     }
   }
   &__content {
@@ -1592,6 +1639,7 @@
     padding: 24rem 16rem;
   }
   &__header {
+    margin: 0 0 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1611,6 +1659,7 @@
     background: $blueNeutralColor;
     width: 112rem;
     height: 112rem;
+    margin: -36rem -36rem 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1620,6 +1669,7 @@
     @media (max-width: $md) {
       width: 44rem;
       height: 44rem;
+      margin: -12rem -12rem 0 0;
     }
     img {
       width: 54rem;

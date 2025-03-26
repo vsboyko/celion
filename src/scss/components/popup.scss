@@ -1,5 +1,5 @@
 .popup {
-  background: rgba($blackColor, .9);
+  background: rgba($blackColor, .76);
   width: 100%;
   width: 100vw;
   padding: var(--gap-fluid);
@@ -56,9 +56,9 @@
   &__content {
     background: #2B2B2B;
     width: 100%;
-    max-width: 520rem;
+    max-width: 568rem;
     margin: 0 auto;
-    padding: 70rem 50rem;
+    padding: 70rem 90rem 90rem;
     color: $whiteColor;
     border-radius: 30rem;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out;

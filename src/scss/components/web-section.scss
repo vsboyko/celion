@@ -41,7 +41,7 @@
           opacity: 0;
           visibility: hidden;
         }
-        &:nth-child(4n+4) {
+        &.swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide {
           @media (min-width: $lg-mf) {
             transform: rotate(-12deg);
           }

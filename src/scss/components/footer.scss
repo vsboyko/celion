@@ -1,5 +1,5 @@
 .footer {
-  padding: 40rem 0 15rem;
+  padding: 25rem 0;
   border-radius: 60rem 60rem 0 0;
   position: relative;
   overflow: hidden;
@@ -33,6 +33,11 @@
         opacity: .8;
       }
     }
+    img {
+      @media (max-width: $md) {
+        object-position: 61% top;
+      }
+    }
   }
   &__container {
   }
@@ -54,7 +59,7 @@
     }
   }
   &__nav {
-    font-weight: 900;
+    font-weight: 600;
     font-size: var(--fs-12);
     @media (max-width: $md) {
       max-width: 100%;
@@ -100,7 +105,7 @@
   }
   &__copyright {
     margin: 0;
-    padding: 28rem 0 0;
+    padding: 25rem 0 0;
     font-size: var(--fs-14);
     color: $greyMediumColor;
     border-top: 1px solid #3D3D3D;

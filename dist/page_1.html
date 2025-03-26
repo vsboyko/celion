@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20250324185833">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250326181034">
   <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
@@ -14,6 +14,7 @@
   <title>Celion - Page 1</title>
 </head>
   <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
 
     <div id="root" class="site">
       <div class="site__pattern-bg"></div>
@@ -48,7 +49,7 @@
                 <use xlink:href="images/icons/icons.svg#arrow-down-1"></use>
               </svg>
             </button>
-            <a href="services.html" class="u-nav__link">Услуги</a>
+            <a href="javascript:void(0);" class="u-nav__link">Услуги</a>
             <ul class="u-nav__dropdown">
               <li class="u-nav__dropdown-item">
                 <a href="#" class="u-nav__dropdown-link">Submenu 1</a>
@@ -77,7 +78,7 @@
       </nav>
       <div class="btn-group header__btn-group">
         <div class="btn-group__inner">
-          <button type="button" data-modal="popup-thanks" class="btn btn--size-sm btn--theme-white-transparent">
+          <a href="static/files/presentation.pdf" class="btn btn--size-sm btn--theme-white-transparent js-open-pdf">
             <span class="btn__inner">
               <span class="btn__icon btn__icon--dir-ltr">
                 <svg class="u-icon">
@@ -86,7 +87,7 @@
               </span>
               <span class="btn__title fw-500">Презентация</span>
             </span>
-          </button>
+          </a>
           <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-sm">
             <span class="btn__inner">
               <span class="btn__title">ОСТАВИТЬ ЗАЯВКУ</span>
@@ -120,7 +121,9 @@
                       <img src="images/skill-card-1.svg" width="70" height="70" alt="Мобильная приложения">
                     </picture>
                     <div class="how-we-work-card__content">
-                      <h3 class="how-we-work-card__title">Мобильная приложения</h3>
+                      <h3 class="how-we-work-card__title">
+                        <a href="page_2.html" class="how-we-work-card__link">Мобильная приложения</a>
+                      </h3>
                       <div class="u-content how-we-work-card__text">
                         <p>Flutter</p>
                       </div>
@@ -133,7 +136,9 @@
                       <img src="images/skill-card-2.svg" width="70" height="70" alt="Админ панель">
                     </picture>
                     <div class="how-we-work-card__content">
-                      <h3 class="how-we-work-card__title">Админ панель</h3>
+                      <h3 class="how-we-work-card__title">
+                        <a href="page_2.html" class="how-we-work-card__link">Админ панель</a>
+                      </h3>
                       <div class="u-content how-we-work-card__text">
                         <p>React JS</p>
                       </div>
@@ -146,7 +151,9 @@
                       <img src="images/skill-card-3.svg" width="70" height="70" alt="Веб-сайт">
                     </picture>
                     <div class="how-we-work-card__content">
-                      <h3 class="how-we-work-card__title">Веб-сайт</h3>
+                      <h3 class="how-we-work-card__title">
+                        <a href="page_2.html" class="how-we-work-card__link">Веб-сайт</a>
+                      </h3>
                       <div class="u-content how-we-work-card__text">
                         <p>React JS</p>
                       </div>
@@ -167,7 +174,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-1.webp" type="image/webp">
+                          
                           <img src="images/web-card-1.jpg" alt="Card 1" width="236" height="498">
                         </picture>
                       </div>
@@ -175,7 +182,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-2.webp" type="image/webp">
+                          
                           <img src="images/web-card-2.jpg" alt="Card 2" width="236" height="498">
                         </picture>
                       </div>
@@ -183,7 +190,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-3.webp" type="image/webp">
+                          
                           <img src="images/web-card-3.jpg" alt="Card 3" width="236" height="498">
                         </picture>
                       </div>
@@ -191,7 +198,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-4.webp" type="image/webp">
+                          
                           <img src="images/web-card-4.jpg" alt="Card 4" width="236" height="498">
                         </picture>
                       </div>
@@ -199,7 +206,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-1.webp" type="image/webp">
+                          
                           <img src="images/web-card-1.jpg" alt="Card 1" width="236" height="498">
                         </picture>
                       </div>
@@ -207,7 +214,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-2.webp" type="image/webp">
+                          
                           <img src="images/web-card-2.jpg" alt="Card 2" width="236" height="498">
                         </picture>
                       </div>
@@ -215,7 +222,7 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-3.webp" type="image/webp">
+                          
                           <img src="images/web-card-3.jpg" alt="Card 3" width="236" height="498">
                         </picture>
                       </div>
@@ -223,19 +230,19 @@
                     <div class="swiper-slide web-section__slider-slide">
                       <div class="web-card web-section__slider-card">
                         <picture class="web-card__img">
-                          <source srcset="images/web-card-4.webp" type="image/webp">
+                          
                           <img src="images/web-card-4.jpg" alt="Card 4" width="236" height="498">
                         </picture>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button type="button" class="js-web-slider-btn-next swiper-button swiper-button-prev">
+                <button type="button" class="swiper-button js-web-slider-btn-prev swiper-button-prev">
                   <svg class="u-icon swiper-button__icon">
                     <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
                   </svg>
                 </button>
-                <button type="button" class="js-web-slider-btn-next swiper-button swiper-button-next">
+                <button type="button" class="swiper-button js-web-slider-btn-next swiper-button-next">
                   <svg class="u-icon swiper-button__icon">
                     <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
                   </svg>
@@ -294,7 +301,7 @@
 </section>
           
           <picture class="d-md-none astronaut-bg shadow-y">
-            <source srcset="images/astronaut-bg.webp" type="image/webp">
+            
             <img src="images/astronaut-bg.png" alt="" width="1920" height="803">
           </picture>
           <picture class="d-md-none site__decor site__decor--1 u-decor">
@@ -377,7 +384,7 @@
         <p class="fs-6 title popup__title">Обратный звонок</p>
         <p class="popup__description">Оставьте Ваши данные и мы свяжемся с&nbsp;Вами в ближайшее время.</p>
         <form action="#" class="popup__form">
-          <input type="text" name="name" class="u-input u-input--size-md u-input--theme-white-light u-input--type-textarea js-phone-mask popup__input" placeholder="Как к Вам обращаться?">
+          <input type="text" name="name" class="u-input u-input--size-md u-input--theme-white-light u-input--type-textarea popup__input" placeholder="Как к Вам обращаться?">
           <input type="tel" name="phone" class="u-input u-input--size-md u-input--theme-white-light u-input--type-textarea js-phone-mask popup__input" required placeholder="Номер Вашего телефона*">
           <button type="submit" class="btn btn--theme-accent-gradient btn--size-md popup__btn">
             <span class="btn__inner">
@@ -409,6 +416,6 @@
 </div>
     </div>
 
-    <script src="js/app.min.js??=v=20250324185833"></script>
+    <script src="js/app.min.js??=v=20250326181034"></script>
   </body>
 </html>

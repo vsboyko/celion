@@ -85,7 +85,7 @@
     flex-direction: column;
     @media (max-width: $md) {
       margin-top: 0;
-      padding-bottom: 380rem;
+      padding-bottom: 394rem;
     }
   }
   &__title-wrapper {
@@ -108,7 +108,7 @@
   }
   &__title-description {
     margin: 0;
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--fs-9);
     line-height: $lineHeight2;
     position: absolute;
@@ -117,7 +117,7 @@
   }
   &__suptitle {
     margin: 0 0 8rem;
-    font-weight: bold;
+    font-weight: 600;
     font-size: var(--fs-8);
     text-transform: uppercase;
     order: -1;
@@ -134,8 +134,9 @@
       margin: 0 6% 0 2.3%;
       flex-shrink: 0;
       @media (max-width: $md) {
-        margin-right: 16rem;
-        margin-left: 0;
+        margin: var(--gap) 90rem 0 0;
+        padding-right: 10rem;
+        padding-left: 10rem;
       }
     }
     &-btn-mobile {
@@ -221,7 +222,7 @@
     height: auto;
     display: block;
     @media (max-width: $md) {
-      padding-bottom: 24%;
+      padding-bottom: 53.6%;
     }
     &-wrapper {
       width: 100%;
@@ -235,12 +236,16 @@
       overflow: hidden;
       z-index: -4;
       @media (max-width: $md) {
-        width: 150%;
+        width: 144%;
+        top: -264rem;
       }
       img {
         width: 100%;
         height: auto;
         display: block;
+        @media (max-width: $md) {
+          transform: rotate(27deg);
+        }
       }
     }
     img {
@@ -270,7 +275,7 @@
     }
     &-col {
       margin-bottom: var(--gap-container);
-      @media (max-width: $sm) {
+      @media (max-width: $md) {
         max-width: 100%;
         flex-basis: 100%;
       }

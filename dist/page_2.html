@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20250324185833">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250326181034">
   <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
@@ -14,6 +14,7 @@
   <title>Celion - Рассчитать стоимость</title>
 </head>
   <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
 
     <div id="root" class="site">
       <div class="site__pattern-bg"></div>
@@ -48,7 +49,7 @@
                 <use xlink:href="images/icons/icons.svg#arrow-down-1"></use>
               </svg>
             </button>
-            <a href="services.html" class="u-nav__link">Услуги</a>
+            <a href="javascript:void(0);" class="u-nav__link">Услуги</a>
             <ul class="u-nav__dropdown">
               <li class="u-nav__dropdown-item">
                 <a href="#" class="u-nav__dropdown-link">Submenu 1</a>
@@ -77,7 +78,7 @@
       </nav>
       <div class="btn-group header__btn-group">
         <div class="btn-group__inner">
-          <button type="button" data-modal="popup-thanks" class="btn btn--size-sm btn--theme-white-transparent">
+          <a href="static/files/presentation.pdf" class="btn btn--size-sm btn--theme-white-transparent js-open-pdf">
             <span class="btn__inner">
               <span class="btn__icon btn__icon--dir-ltr">
                 <svg class="u-icon">
@@ -86,7 +87,7 @@
               </span>
               <span class="btn__title fw-500">Презентация</span>
             </span>
-          </button>
+          </a>
           <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-sm">
             <span class="btn__inner">
               <span class="btn__title">ОСТАВИТЬ ЗАЯВКУ</span>
@@ -103,50 +104,27 @@
           <section class="layout">
             <div class="container container--size-md layout__container">
               <h1 class="fadeIn wow fs-2 layout__title u-section-title" data-wow-delay=".2s"><strong>Рассчитать стоимость</strong></h1>
-              <form action="#" class="calculation-form">
+              <form action="#" class="calculation-form js-calculation-form">
                 <div class="calculation-form__item-list">
                   <div class="fadeIn wow calculation-form__item" data-wow-delay=".2s">
                     <p class="calculation-form__title">Разработка дизайна</p>
                     <div class="calculation-form__radio-list">
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_1[]" class="u-radio__control" value="Лендинг +48 000 so’m">
+                        <input type="radio" name="calucalation_radio_1[]" class="js-calculation-radio u-radio__control" data-price="20000" value="Лендинг +20 000 so’m" checked="checked">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Лендинг +48 000 so’m</span>
+                          <span class="u-radio__title">Лендинг +20 000 so’m</span>
                         </span>
                       </label>
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_1[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
+                        <input type="radio" name="calucalation_radio_1[]" class="js-calculation-radio u-radio__control" data-price="50000" value="Сайт-витрина +50 000 so’m">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
+                          <span class="u-radio__title">Сайт-витрина +50 000 so’m</span>
                         </span>
                       </label>
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_1[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
+                        <input type="radio" name="calucalation_radio_1[]" class="js-calculation-radio u-radio__control" data-price="100000" value="Сайт-витрина +100 000 so’m">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="fadeIn wow calculation-form__item" data-wow-delay=".2s">
-                    <p class="calculation-form__title">Разработка дизайна</p>
-                    <div class="calculation-form__radio-list">
-                      <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_2[]" class="u-radio__control" value="Лендинг +48 000 so’m">
-                        <span class="u-radio__inner">
-                          <span class="u-radio__title">Лендинг +48 000 so’m</span>
-                        </span>
-                      </label>
-                      <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_2[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
-                        <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
-                        </span>
-                      </label>
-                      <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_2[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
-                        <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
+                          <span class="u-radio__title">Сайт-витрина +100 000 so’m</span>
                         </span>
                       </label>
                     </div>
@@ -155,44 +133,21 @@
                     <p class="calculation-form__title">Разработка дизайна</p>
                     <div class="calculation-form__radio-list">
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_3[]" class="u-radio__control" value="Лендинг +48 000 so’m">
+                        <input type="radio" name="calucalation_radio_2[]" class="js-calculation-radio u-radio__control" data-price="30000" value="Лендинг +30 000 so’m" checked="checked">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Лендинг +48 000 so’m</span>
+                          <span class="u-radio__title">Лендинг +30 000 so’m</span>
                         </span>
                       </label>
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_3[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
+                        <input type="radio" name="calucalation_radio_2[]" class="js-calculation-radio u-radio__control" data-price="60000" value="Сайт-витрина +60 000 so’m">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
+                          <span class="u-radio__title">Сайт-витрина +60 000 so’m</span>
                         </span>
                       </label>
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_3[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
+                        <input type="radio" name="calucalation_radio_2[]" class="js-calculation-radio u-radio__control" data-price="120000" value="Сайт-витрина +120 000 so’m">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="fadeIn wow calculation-form__item" data-wow-delay=".2s">
-                    <p class="calculation-form__title">Разработка дизайна</p>
-                    <div class="calculation-form__radio-list">
-                      <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_4[]" class="u-radio__control" value="Лендинг +48 000 so’m">
-                        <span class="u-radio__inner">
-                          <span class="u-radio__title">Лендинг +48 000 so’m</span>
-                        </span>
-                      </label>
-                      <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_4[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
-                        <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
-                        </span>
-                      </label>
-                      <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_4[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
-                        <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
+                          <span class="u-radio__title">Сайт-витрина +120 000 so’m</span>
                         </span>
                       </label>
                     </div>
@@ -201,21 +156,67 @@
                     <p class="calculation-form__title">Разработка дизайна</p>
                     <div class="calculation-form__radio-list">
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_4[]" class="u-radio__control" value="Лендинг +48 000 so’m">
+                        <input type="radio" name="calucalation_radio_3[]" class="js-calculation-radio u-radio__control" data-price="60000" value="Лендинг +60 000 so’m" checked="checked">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Лендинг +48 000 so’m</span>
+                          <span class="u-radio__title">Лендинг +60 000 so’m</span>
                         </span>
                       </label>
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_4[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
+                        <input type="radio" name="calucalation_radio_3[]" class="js-calculation-radio u-radio__control" data-price="70000" value="Сайт-витрина +70 000 so’m">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
+                          <span class="u-radio__title">Сайт-витрина +70 000 so’m</span>
                         </span>
                       </label>
                       <label class="calculation-form__radio u-radio">
-                        <input type="radio" name="calucalation_radio_4[]" class="u-radio__control" value="Сайт-витрина +160 000 so’m">
+                        <input type="radio" name="calucalation_radio_3[]" class="js-calculation-radio u-radio__control" data-price="140000" value="Сайт-витрина +140 000 so’m">
                         <span class="u-radio__inner">
-                          <span class="u-radio__title">Сайт-витрина +160 000 so’m</span>
+                          <span class="u-radio__title">Сайт-витрина +140 000 so’m</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="fadeIn wow calculation-form__item" data-wow-delay=".2s">
+                    <p class="calculation-form__title">Разработка дизайна</p>
+                    <div class="calculation-form__radio-list">
+                      <label class="calculation-form__radio u-radio">
+                        <input type="radio" name="calucalation_radio_4[]" class="js-calculation-radio u-radio__control" data-price="80000" value="Лендинг +80 000 so’m" checked="checked">
+                        <span class="u-radio__inner">
+                          <span class="u-radio__title">Лендинг +80 000 so’m</span>
+                        </span>
+                      </label>
+                      <label class="calculation-form__radio u-radio">
+                        <input type="radio" name="calucalation_radio_4[]" class="js-calculation-radio u-radio__control" data-price="90000" value="Сайт-витрина +90 000 so’m">
+                        <span class="u-radio__inner">
+                          <span class="u-radio__title">Сайт-витрина +90 000 so’m</span>
+                        </span>
+                      </label>
+                      <label class="calculation-form__radio u-radio">
+                        <input type="radio" name="calucalation_radio_4[]" class="js-calculation-radio u-radio__control" data-price="180000" value="Сайт-витрина +180 000 so’m">
+                        <span class="u-radio__inner">
+                          <span class="u-radio__title">Сайт-витрина +180 000 so’m</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="fadeIn wow calculation-form__item" data-wow-delay=".2s">
+                    <p class="calculation-form__title">Разработка дизайна</p>
+                    <div class="calculation-form__radio-list">
+                      <label class="calculation-form__radio u-radio">
+                        <input type="radio" name="calucalation_radio_4[]" class="js-calculation-radio u-radio__control" data-price="90000" value="Лендинг +90 000 so’m" checked="checked">
+                        <span class="u-radio__inner">
+                          <span class="u-radio__title">Лендинг +90 000 so’m</span>
+                        </span>
+                      </label>
+                      <label class="calculation-form__radio u-radio">
+                        <input type="radio" name="calucalation_radio_4[]" class="js-calculation-radio u-radio__control" data-price="110000" value="Сайт-витрина +110 000 so’m">
+                        <span class="u-radio__inner">
+                          <span class="u-radio__title">Сайт-витрина +110 000 so’m</span>
+                        </span>
+                      </label>
+                      <label class="calculation-form__radio u-radio">
+                        <input type="radio" name="calucalation_radio_4[]" class="js-calculation-radio u-radio__control" data-price="220000" value="Сайт-витрина +220 000 so’m">
+                        <span class="u-radio__inner">
+                          <span class="u-radio__title">Сайт-витрина +220 000 so’m</span>
                         </span>
                       </label>
                     </div>
@@ -225,18 +226,18 @@
                   <div class="calculation-form__price">
                     <p class="calculation-form__title">Общая сумма</p>
                     <div class="calculation-form__price-count">
-                      <p><span>1.500.000</span> so’m</p>
+                      <p><span class="js-calculation-amount-oldprice">1.500.000</span> so’m</p>
                     </div>
                   </div>
                   <div class="calculation-form__price">
                     <p class="calculation-form__title">Цена со скидкой</p>
                     <div class="calculation-form__price-count">
-                      <p><span>1.200.000</span> so’m</p>
+                      <p><span class="js-calculation-amount-price">1.200.000</span> so’m</p>
                     </div>
                   </div>
                 </div>
                 <footer class="calculation-form__footer">
-                  <button type="button" class="btn btn--theme-accent-gradient btn--size-md calculation-form__btn">
+                  <button type="button" class="btn btn--theme-accent-gradient btn--size-md calculation-form__btn js-calculation-btn">
                     <span class="btn__inner">
                       <span class="btn__title">Рассчитать стоимость</span>
                     </span>
@@ -379,7 +380,7 @@
         <p class="fs-6 title popup__title">Обратный звонок</p>
         <p class="popup__description">Оставьте Ваши данные и мы свяжемся с&nbsp;Вами в ближайшее время.</p>
         <form action="#" class="popup__form">
-          <input type="text" name="name" class="u-input u-input--size-md u-input--theme-white-light u-input--type-textarea js-phone-mask popup__input" placeholder="Как к Вам обращаться?">
+          <input type="text" name="name" class="u-input u-input--size-md u-input--theme-white-light u-input--type-textarea popup__input" placeholder="Как к Вам обращаться?">
           <input type="tel" name="phone" class="u-input u-input--size-md u-input--theme-white-light u-input--type-textarea js-phone-mask popup__input" required placeholder="Номер Вашего телефона*">
           <button type="submit" class="btn btn--theme-accent-gradient btn--size-md popup__btn">
             <span class="btn__inner">
@@ -411,6 +412,6 @@
 </div>
     </div>
 
-    <script src="js/app.min.js??=v=20250324185833"></script>
+    <script src="js/app.min.js??=v=20250326181034"></script>
   </body>
 </html>

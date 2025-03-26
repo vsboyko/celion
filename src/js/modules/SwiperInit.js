@@ -21,34 +21,32 @@ export default function InitSliders() {
       workSchemeSwiper = null;
     }
 
-    workSchemeSwiper = new Swiper(workSchemeSlider, {
-      allowTouchMove: true,
-    });
-
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+    workSchemeSwiper = new Swiper(workSchemeSlider, {
+      allowTouchMove: !isMobile,
+    });
 
     if (workSchemeNavSlider) {
       if (isMobile) {
         if (!workSchemeNavSwiper) {
           workSchemeNavSwiper = new Swiper(workSchemeNavSlider, {
-            slidesPerView: 1.4,
+            slidesPerView: 1.61,
             spaceBetween: 16,
             watchSlidesProgress: true,
             slideToClickedSlide: true,
           });
-
-          workSchemeSwiper.on('slideChange', () => {
-            updateActiveNavSlide(workSchemeSwiper.activeIndex);
-          });
-
-          workSchemeNavSlider.querySelectorAll('.swiper-slide').forEach((slide, index) => {
-            slide.setAttribute('data-index', index);
-            slide.addEventListener('click', () => {
-              workSchemeSwiper.slideTo(index);
-              updateActiveNavSlide(index);
-            });
-          });
         }
+
+        workSchemeSwiper.on('slideChange', () => {
+          workSchemeNavSwiper.slideTo(workSchemeSwiper.activeIndex);
+          updateActiveNavSlide(workSchemeSwiper.activeIndex);
+        });
+
+        workSchemeNavSwiper.on('slideChange', () => {
+          workSchemeSwiper.slideTo(workSchemeNavSwiper.activeIndex);
+        });
+
       } else {
         if (workSchemeNavSwiper) {
           workSchemeNavSwiper.destroy();
@@ -79,7 +77,6 @@ export default function InitSliders() {
 
     if (isMobile && !reviewsSwiper) {
       reviewsSwiper = new Swiper(reviewsSlider, {
-        autoHeight: true,
         slidesPerView: 1.2,
         spaceBetween: 16,
         watchSlidesProgress: true

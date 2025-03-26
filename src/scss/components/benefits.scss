@@ -64,6 +64,7 @@
     font-weight: 500;
     line-height: $lineHeight4;
     @media (max-width: $md) {
+      margin-bottom: 8rem;
       font-size: 14rem;
     }
   }

@@ -67,7 +67,6 @@
   &__logo {
     max-width: 204rem;
     flex-shrink: 0;
-    top: 2rem;
     @media (max-width: $md) {
       max-width: 126rem;
       top: 0;
@@ -118,7 +117,7 @@
     }
   }
   &__nav {
-    margin: 8rem 2.9% 0 0;
+    margin: 0 2.9% 0 0;
     flex-grow: 1;
     @media (max-width: $md) {
       max-width: 100%;
