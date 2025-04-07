@@ -110,3 +110,30 @@
     margin: 20rem 0 0;
   }
 }
+
+#calc-iframe {
+  width: 100%;
+  padding: 0 0 51%;
+  position: relative;
+  overflow: hidden;
+}
+
+#calc-iframe iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 991px) {
+  #calc-iframe {
+    padding-bottom: 98%;
+  }
+}
+
+@media (max-width: 575px) {
+  #calc-iframe {
+    padding-bottom: 215.652173913%;
+  }
+}

@@ -89,8 +89,10 @@ $xs-mf: $xs + 1;
   --fs-18: 56rem;
   --fs-19: 34rem;
   --fs-20: 13.5rem;
+  --fs-21: 60rem;
 
   --ui-height-sm: 50rem;
+  --ui-height-semi: 58rem;
 
   --gap: 30rem;
   --gap-: -30rem;
@@ -106,6 +108,7 @@ $xs-mf: $xs + 1;
 
   --header-height: var(--scroll-offset);
   --header-gap: 38rem;
+  --header-bottom-gap: 90rem;
 
   --vh: 1vh;
 
@@ -125,6 +128,7 @@ $xs-mf: $xs + 1;
     --fs-16: 14.5rem;
     --fs-17: 24rem;
     --fs-19: 16rem;
+    --fs-21: var(--fs-1);
 
     --gap: 8rem;
     --gap-: -8rem;
@@ -139,4 +143,8 @@ $xs-mf: $xs + 1;
 
     --section-y: 36rem;
   }
+}
+
+.wow {
+  visibility: hidden;
 }

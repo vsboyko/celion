@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Celion - Разработка мобильных приложение'
+  })
+  <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
+
+    <div id="root" class="site">
+      <div class="site__pattern-bg"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--1"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--2"></div>
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'js-header-sticky site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main site__main">
+          <!-- mobile-app BEGIN -->
+          <section class="mobile-app">
+            <div class="container container--size-md mobile-app__container">
+              <div class="mobile-app__block">
+                <h1 class="wow fadeIn mobile-app__title" data-wow-delay=".2s">Разработка мобильных приложение</h1>
+                <div class="wow fadeIn u-content mobile-app__text" data-wow-delay=".4s">
+                  <p>Biz texnologik infrastruktura bilan shug'ullanamiz, sizga bu bilan shug'ullanishga to'g'ri kelmaydi. Bizning maqsadimiz - siz uchun dasturlar ishlab chiqishni oson va yoqimli qilish, do'stona muhitni ta'minlash va DevOpsning eng yaxshi amaliyotlarini joriy qilishdir</p>
+                </div>
+                <div class="wow fadeIn mobile-app__footer" data-wow-delay=".6s">
+                  <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-md mobile-app__btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Qayta qo’ng’iroq qilish</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- mobile-app END -->
+          <!-- design-section BEGIN -->
+          <section class="design-section">
+            <div class="container container--size-md design-section__container">
+              <h2 class="wow fadeIn design-section__title" data-wow-delay=".8s">Design</h2>
+              <div class="wow fadeIn u-content design-section__text" data-wow-delay="1s">
+                <p>At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences. </p>
+              </div>
+              <h3 class="wow fadeIn design-section__subtitle">Наши услуги по проектированию включают:</h3>
+              <div class="design-section__list">
+                <div class="design-section__card">
+                  <h4 class="wow fadeIn design-section__card-title" data-wow-delay=".2s">User Experience (UX) Design</h4>
+                  <div class="row design-section__card-row">
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".3s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-1.svg" width="40" heigh="40" alt="User Research and Persona Development">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">User Research and Persona Development</h3>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".4s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-2.svg" width="40" heigh="40" alt="Information Architecture and Wireframing">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">Information Architecture and Wireframing</h3>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".5s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-3.svg" width="40" heigh="40" alt="Interactive Prototyping and User Testing">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">Interactive Prototyping and User Testing</h3>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="design-section__card">
+                  <h4 class="wow fadeIn design-section__card-title" data-wow-delay=".2s">User Interface (UI) Design</h4>
+                  <div class="row design-section__card-row">
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".3s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-4.svg" width="40" heigh="40" alt="User Research and Persona Development">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">User Research and Persona Development</h3>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".4s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-5.svg" width="40" heigh="40" alt="Information Architecture and Wireframing">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">Information Architecture and Wireframing</h3>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".5s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-6.svg" width="40" heigh="40" alt="Interactive Prototyping and User Testing">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">Interactive Prototyping and User Testing</h3>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="design-section__card">
+                  <h4 class="wow fadeIn design-section__card-title" data-wow-delay=".2s">Branding and Identity</h4>
+                  <div class="row design-section__card-row">
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".3s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-7.svg" width="40" heigh="40" alt="User Research and Persona Development">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">User Research and Persona Development</h3>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".4s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-8.svg" width="40" heigh="40" alt="Information Architecture and Wireframing">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">Information Architecture and Wireframing</h3>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="wow fadeIn row__col--4 design-section__card-col" data-wow-delay=".5s">
+                      <article class="u-box design-card design-section__card-el">
+                        <header class="design-card__header">
+                          <picture class="design-card__picture">
+                            <img src="images/design-card-icon-9.svg" width="40" heigh="40" alt="Interactive Prototyping and User Testing">
+                          </picture>
+                        </header>
+                        <div class="design-card__content">
+                          <h3 class="design-card__title">Interactive Prototyping and User Testing</h3>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- design-section END -->
+          <!-- tariffs-section BEGIN -->
+          <section class="tariffs-section">
+            <div class="container container--size-md tariffs-section__container">
+              <h2 class="wow fadeIn tariffs-section__title" data-wow-delay=".2s">Tarif rejalari</h2>
+              <div class="row tariffs-section__row">
+                <div class="wow fadeIn row__col--4 tariffs-section__col" data-wow-delay=".3s">
+                  <article class="u-box tariffs-card tariffs-section__el">
+                    <header class="tariffs-card__header">
+                      <h3 class="tariffs-card__name">Basic</h3>
+                      <div class="tariffs-card__price">$3,999<span>/mo</span></div>
+                      <p class="tariffs-card__subtitle">Perfect for startup or small business</p>
+                    </header>
+                    <div class="tariffs-card__content">
+                      <ul class="tariffs-card__list">
+                        <li>Need your wireframe</li>
+                        <li>Design with Figma, Framer</li>
+                        <li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
+                        <li>Online</li>
+                        <li>Work in business days, no weekend</li>
+                        <li>Support 3 months</li>
+                      </ul>
+                    </div>
+                    <footer class="tariffs-card__footer">
+                    <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-semi tariffs-card__btn">
+                      <span class="btn__inner">
+                        <span class="btn__icon btn__icon--dir-rtl u-flip-x">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                          </svg>
+                        </span>
+                        <span class="btn__title">Pick This Package</span>
+                      </span>
+                    </button>
+                    </footer>
+                  </article>
+                </div>
+                <div class="wow fadeIn row__col--4 tariffs-section__col" data-wow-delay=".4s">
+                  <article class="u-box tariffs-card tariffs-section__el">
+                    <header class="tariffs-card__header">
+                      <h3 class="tariffs-card__name">Premium</h3>
+                      <div class="tariffs-card__price">$5,999<span>/mo</span></div>
+                      <p class="tariffs-card__subtitle">Perfect for medium or big business</p>
+                      <span class="u-badge tariffs-card__best-choise">Best Choice</span>
+                    </header>
+                    <div class="tariffs-card__content">
+                      <ul class="tariffs-card__list">
+                        <li>Need your wireframe</li>
+                        <li>Design with Figma, Framer</li>
+                        <li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
+                        <li>Remote/Online</li>
+                        <li>Work with both weekend</li>
+                        <li>Support 6 months</li>
+                        <li>Your project alway be priority</li>
+                        <li>Customer care gifts</li>
+                      </ul>
+                    </div>
+                    <footer class="tariffs-card__footer">
+                    <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-semi tariffs-card__btn">
+                      <span class="btn__inner">
+                        <span class="btn__icon btn__icon--dir-rtl u-flip-x">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                          </svg>
+                        </span>
+                        <span class="btn__title">Pick This Package</span>
+                      </span>
+                    </button>
+                    </footer>
+                  </article>
+                </div>
+                <div class="wow fadeIn row__col--4 tariffs-section__col" data-wow-delay=".5s">
+                  <article class="u-box tariffs-card tariffs-section__el">
+                    <header class="tariffs-card__header">
+                      <h3 class="tariffs-card__name">ULTIMATE</h3>
+                      <div class="tariffs-card__price">$9,999<span>/mo</span></div>
+                      <p class="tariffs-card__subtitle">Perfect for startup or small business</p>
+                    </header>
+                    <div class="tariffs-card__content">
+                      <ul class="tariffs-card__list">
+                        <li>Need your wireframe</li>
+                        <li>Design with Figma, Framer</li>
+                        <li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
+                        <li>Remote/Online</li>
+                        <li>Work with both weekend</li>
+                        <li>Support 12 months</li>
+                        <li>Your project alway be priority</li>
+                        <li>Customer care gifts</li>
+                      </ul>
+                    </div>
+                    <footer class="tariffs-card__footer">
+                    <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-semi tariffs-card__btn">
+                      <span class="btn__inner">
+                        <span class="btn__icon btn__icon--dir-rtl u-flip-x">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                          </svg>
+                        </span>
+                        <span class="btn__title">Pick This Package</span>
+                      </span>
+                    </button>
+                    </footer>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- tariffs-section END -->
+          <!-- appeal-choise BEGIN -->
+          <section class="wow fadeIn appeal-choise" data-wow-delay=".2s">
+            <div class="container container--size-md appeal-choise__container">
+              <div class="appeal-choise__main">
+                <h2 class="wow fadeIn appeal-choise__main-title" data-wow-delay=".2s">Individual paket</h2>
+                <div class="appeal-choise__main-major">
+                  <div class="appeal-choise__main-content">
+                    <h3 class="appeal-choise__main-subtitle">Keling, muhokama qilamiz</h3>
+                    <div class="u-content appeal-choise__main-text">
+                      <p>Biz sizning ehtiyojlaringiz uchun individual yechimlarni taklif etamiz</p>
+                    </div>
+                  </div>
+                  <div class="appeal-choise__main-aside">
+                    <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-semi appeal-choise__main-btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Biz bilan bog'laning</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- appeal-choise END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

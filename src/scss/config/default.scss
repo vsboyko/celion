@@ -270,6 +270,20 @@ svg,
       background-blend-mode: exclusion;
     }
   }
+  &__planet {
+    @media (max-width: $md) {
+      width: 104rem !important;
+      height: 104rem !important;
+    }
+    &--1 {
+      top: 530rem;
+      left: 30rem;
+    }
+    &--2 {
+      top: 1047rem;
+      right: 48rem;
+    }
+  }
   &__inner {
     min-height: 100vh;
     display: flex;

@@ -1,0 +1,31 @@
+.tariffs-section {
+  padding: var(--section-y) 0;
+  @media (max-width: $md) {
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 60rem;
+    font-weight: bold;
+    font-size: var(--fs-21);
+    text-align: center;
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
+  }
+  &__row {
+    --gap: 15rem;
+    --gap-: -15rem;
+    margin-bottom: calc(-4 * var(--gap));
+  }
+  &__col {
+    margin-bottom: calc(4 * var(--gap));
+    @media (max-width: $md) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+  &__el {
+    height: 100%;
+  }
+}

@@ -149,6 +149,12 @@
       --btn-padding-y: 8rem;
       --btn-font-size: var(--fs-13);
     }
+    &-semi {
+      --btn-height: var(--ui-height-semi);
+      --btn-padding-x: 16rem;
+      --btn-padding-y: 8rem;
+      --btn-font-size: var(--fs-12);
+    }
     &-md {
       --btn-height: 80rem;
       --btn-padding-x: 58rem;
@@ -185,6 +191,7 @@
       }
       &-rtl {
         margin-left: 10rem;
+        order: 2;
       }
     }
     .u-icon,
@@ -690,6 +697,15 @@
   strong,
   b {
     font-weight: bold;
+  }
+}
+
+.u-flip {
+  &-x {
+    transform: scaleX(-1);
+  }
+  &-y {
+    transform: scaleY(-1);
   }
 }
 
@@ -1926,5 +1942,145 @@
     }
   }
   &__btn {
+  }
+}
+
+.design-card {
+  padding: 30rem;
+  &__header {
+    margin: 0 0 30rem;
+  }
+  &__picture {
+    background: $gradientAccent1;
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $radiusMd;
+    img,
+    svg {
+      width: 40rem;
+      height: 40rem;
+      display: block;
+      object-fit: contain;
+      fill: $whiteColor;
+    }
+  }
+  &__content {
+  }
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: var(--fs-9);
+    line-height: $lineHeight4;
+  }
+}
+
+.u-badge {
+  background: $gradientAccent1;
+  min-height: 38rem;
+  padding: 5rem 16rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: var(--fs-12);
+  line-height: 1.3;
+  color: $whiteColor;
+  text-align: center;
+  border-radius: 20rem;
+  white-space: nowrap;
+}
+
+.tariffs-card {
+  padding: 40rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px rgba($fontColor, .2);
+  border-radius: $radiusSemi;
+  @media (max-width: $md) {
+    padding: 30rem;
+    border-radius: $radiusMd;
+  }
+  &__header {
+  }
+  &__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: var(--fs-11);
+    text-transform: uppercase;
+  }
+  &__price {
+    background: $gradientAccent2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 15rem 0 10rem;
+    font-weight: 600;
+    font-size: 51rem;
+    line-height: 1;
+    text-fill-color: transparent;
+    white-space: nowrap;
+    span {
+      font-weight: 500;
+      font-size: 45%;
+    }
+  }
+  &__subtitle {
+    max-width: 190rem;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: var(--fs-12);
+    line-height: 1.35;
+    color: #808080;
+    @media (max-width: $md) {
+      font-size: 14rem;
+    }
+  }
+  &__best-choise {
+    min-width: 190rem;
+    position: absolute;
+    top: -19rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__content {
+    padding: 30rem 0 96rem;
+    line-height: 1.4;
+    @media (max-width: $md) {
+      padding: 20rem 0 40rem;
+      line-height: 1.35;
+      font-size: 16rem;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      margin: 0;
+      padding: 15rem 0;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($fontColor, .2);
+      }
+    }
+  }
+  &__footer {
+    margin-top: auto;
+  }
+  &__btn {
+    min-width: 68%;
+    border-radius: 44rem;
+    @media (max-width: $md) {
+      width: 100%;
+    }
   }
 }
