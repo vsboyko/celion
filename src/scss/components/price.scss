@@ -1,0 +1,32 @@
+.price {
+  padding: var(--section-y) 0;
+  @media (max-width: $md) {
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 54rem;
+    font-weight: bold;
+    font-size: var(--fs-18);
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
+  }
+  &__text {
+    max-width: 1200rem;
+    margin-bottom: 48rem;
+    line-height: $lineHeight4;
+    color: #9395A0;
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: 45rem;
+    }
+  }
+  &__list {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: 100rem;
+      }
+    }
+  }
+}

@@ -42,9 +42,10 @@
   &__container {
   }
   &__logo {
+    width: 204rem;
     vertical-align: top;
     @media (max-width: $md) {
-      max-width: 150rem;
+      width: 150rem;
     }
   }
   &__nav-wrapper {

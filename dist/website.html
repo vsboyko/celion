@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250418085545">
+  <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Celion">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <title>Celion - Создание сайта-визитки</title>
+</head>
+  <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
+
+    <div id="root" class="site">
+      <div class="site__pattern-bg"></div>
+      <div class="site__planet u-planet u-planet--theme-1 site__planet--1"></div>
+      <div class="site__planet u-planet u-planet--theme-1 site__planet--2"></div>
+      <div class="site__inner">
+        
+        <header class="header js-header-sticky site__header">
+  <div class="container container--size-md header__container">
+    <div class="header__inner">
+      <a href="/" class="logo header__logo">
+        <picture class="logo__img">
+          <img src="images/brand-logo-white.svg" width="204" height="57" alt="Celion">
+        </picture>
+      </a>
+      <button type="button" class="d-lg-block header__toggle js-nav-toggle">
+        <svg class="u-icon">
+          <use xlink:href="images/icons/icons.svg#menu-open"></use>
+        </svg>
+        <svg class="u-icon">
+          <use xlink:href="images/icons/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__dropdown">
+      <nav class="header__nav u-nav" role="navigation">
+        <ul class="u-nav__list">
+          <li class="u-nav__item">
+            <a href="#portfolio" class="u-nav__link js-anchor">Портфолио и кейсы</a>
+          </li>
+          <li class="u-nav__item">
+            <button type="button" class="js-nav-submenu-toggle u-nav__btn-submenu">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#arrow-down-1"></use>
+              </svg>
+            </button>
+            <a href="javascript:void(0);" class="u-nav__link">Услуги</a>
+            <ul class="u-nav__dropdown">
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 1</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 2</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 3</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 4</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="u-nav__item">
+            <a href="partners.html" class="u-nav__link">Партнерская программа</a>
+          </li>
+          <li class="u-nav__item">
+            <a href="contacts.html" class="u-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn-group header__btn-group">
+        <div class="btn-group__inner">
+          <a href="static/files/presentation.pdf" class="btn btn--size-sm btn--theme-white-transparent js-open-pdf">
+            <span class="btn__inner">
+              <span class="btn__icon btn__icon--dir-ltr">
+                <svg class="u-icon">
+                  <use xlink:href="images/icons/icons.svg#triangle-1"></use>
+                </svg>
+              </span>
+              <span class="btn__title fw-500">Презентация</span>
+            </span>
+          </a>
+          <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-sm">
+            <span class="btn__inner">
+              <span class="btn__title">ОСТАВИТЬ ЗАЯВКУ</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        
+        <main role="main" class="site__main site__main">
+          
+          <section class="website-section">
+            <div class="container container--size-md website-section__container">
+              <div class="row website-section__row">
+                <div class="website-section__col row__col--7 website-section__col--content">
+                  <h1 class="fadeIn wow u-title website-section__title" data-wow-delay=".2s">Создание сайта-визитки</h1>
+                  <div class="u-content fadeIn wow website-section__text" data-wow-delay=".4s">
+                    <p>Разработка надежных сайтов любой сложности для решения именно Ваших задач</p>
+                  </div>
+                  <ul class="list-approve js-wow-counter list-approve--theme-bg-grey website-section__services" data-animation-start=".6s" data-animation-step=".15s">
+                    <li class="fadeIn wow">Перенос сайта на CMS WordPress</li>
+                    <li class="fadeIn wow">Продвижение сайта-визитки</li>
+                    <li class="fadeIn wow">Создание простого сайта с нуля</li>
+                    <li class="fadeIn wow">Сайт на готовом решении</li>
+                  </ul>
+                </div>
+                <div class="website-section__col row__col--5 website-section__col--form">
+                  <form action="#" class="js-wow-counter u-form-project website-section__form">
+  <p class="fs-6 u-title u-form-project__title">Обсудить проект</p>
+  <input type="text" name="name" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white u-form-project__input" placeholder="Ваше имя">
+  <div class="u-form-project__input input-select js-input-select">
+    <div class="input-select__aside">
+      <button type="button" class="input-select__btn js-input-select-btn-toggle"></button>
+      <div class="input-select__dropdown">
+        <button type="button" class="input-select__btn js-input-select-btn-choose is-active">
+          <svg class="u-icon">
+            <use xlink:href="images/icons/icons.svg#phone"></use>
+          </svg>
+        </button>
+        <button type="button" class="input-select__btn js-input-select-btn-choose">
+          <svg class="u-icon">
+            <use xlink:href="images/icons/icons.svg#email"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="input-select__inputs">
+      <input type="tel" name="phone" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white input-select__input js-input-select-el is-active js-phone-mask" required placeholder="Номер Вашего телефона*">
+      <input type="email" name="email" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white input-select__input js-input-select-el" required placeholder="Ваш e-mail*">
+    </div>
+  </div>
+  <button type="submit" class="btn btn--theme-accent-gradient btn--size-md u-form-project__btn">
+    <span class="btn__inner">
+      <span class="btn__title">Отправить</span>
+    </span>
+  </button>
+  <p class="u-form-project__privacy u-privacy">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="https://www.google.com/" target="_blank">политикой обработки персональных данных</a> и <a href="https://www.google.com/" target="_blank">получением информационных рассылок</a>.</p>
+</form>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="website-order">
+            <div class="container container--size-md website-order__container">
+              <div class="row website-order__row">
+                <div class="row__col--6 website-order__col website-order__col--content">
+                  <div class="js-wow-counter website-order__content">
+                    <h2 class="fadeIn wow u-title fs-6 website-order__title">Заказать сайт-визитку легко</h2>
+                    <div class="u-content fadeIn wow website-order__text">
+                      <p>Вам необходимо сделать веб-сайт с минимальными затратами? Позвоните в&nbsp;компанию Celion! Команда специалистов разработает идеальную коммерческую площадку для вашего бизнеса, повышающую имидж компании, привлекающую новых клиентов и увеличивающую объем продаж!</p>
+                    </div>
+                    <footer class="fadeIn wow website-order__footer">
+                      <button type="button" class="btn btn--theme-accent-gradient btn--size-md website-order__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Заказать</span>
+                        </span>
+                      </button>
+                    </footer>
+                  </div>
+                </div>
+                <div class="row__col--6 website-order__col website-order__col--media">
+                  <picture class="fadeIn wow website-order__hero" data-wow-delay=".8s">
+                    
+                    <img src="images/website-order-hero.jpg" width="648" height="484" alt="Заказать сайт-визитку легко">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="info">
+            <div class="container container--size-md info__container">
+              <h2 class="fadeIn wow u-title fs-6 info__title" data-wow-delay=".2s">Чем сайт-визитка отличается от других веб-ресурсов?</h2>
+              <div class="u-content fadeIn wow info__text" data-wow-delay=".4s">
+                <p>Процесс создания сайта-визитки под ключ максимально прост по сравнению с более масштабными проектами (корпоративными порталами, интернет-магазинами и т. д.), реализация которых требует больше времени и технических ресурсов. Структура визитки состоит из 4-6 разделов:</p>
+              </div>
+              <div class="row info__list">
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Информативный первый экран</h3>
+                      <div class="u-content info-card__text">
+                        <p>Яркое УТП, характеризующее особенности вашего бизнеса, или дизайнерское решение, отражающее идею бизнеса и основные направления сайта</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">«Вопрос-Ответ»</h3>
+                      <div class="u-content info-card__text">
+                        <p>В блоке можно не только отвечать на наиболее частые вопросы, но и снять тревоги/возражения потенциального клиента. Например: ответить на вопросы о качестве, защите потребителя от подделки</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Слайдер</h3>
+                      <div class="u-content info-card__text">
+                        <p>В слайдерах размещают фото офиса, товара, баннеры с УТП на главной странице</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Меню</h3>
+                      <div class="u-content info-card__text">
+                        <p>Меню — важная составляющая любого сайта. Меню должно быть информативным, но не перегружать пользователя. Продуманная структура сайта и оптимальное меню — залог успеха</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Раздел новости, статьи</h3>
+                      <div class="u-content info-card__text">
+                        <p>Публикация новостей, акций, статей — важный источник информации о вас и вашем бизнесе. Расскажите о себе больше, станьте ближе к пользователю/клиенту</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Отзывы</h3>
+                      <div class="u-content info-card__text">
+                        <p>Красивый блок с отзывами на странице с возможность оставить новый. Отзывы, так же как и «Вопрос-Ответ» несет пользовательский опыт, помогая принять решение о покупке</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Формы конверсии</h3>
+                      <div class="u-content info-card__text">
+                        <p>Задать вопрос, купить, форма обратной связи, подписка на рассылку и прочее — целевых форм может быть множество, главное, не переборщить и грамотно распределить формы на нужных посадочных страницах</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Портфолио</h3>
+                      <div class="u-content info-card__text">
+                        <p>Страница со списком выполненных проектов компании, поясняющая поставленные задачи и пути решения. На примере выполнения проекта вы убеждаете посетителя сделать заказ в вашей фирме</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="why-we">
+            <div class="container container--size-md why-we__container">
+              <h2 class="fadeIn wow u-title fs-6 why-we__title" data-wow-delay=".2s">Почему мы</h2>
+              <div class="u-content fadeIn wow why-we__text" data-wow-delay=".4s">
+                <p>По просьбе заказчика возможно создание раздела с корпоративной галереей, содержащей фотографии и видео. Визитка имеет простую и понятную структуру, в&nbsp;которой с первого взгляда разберется любой пользователь. Вся информация находится в&nbsp;пределах одного экрана. Разработка одностраничных сайтов требует минимального количества ресурсов и&nbsp;временных затрат. В плане расходов на реализацию проекта это – самое выгодное решение!</p>
+              </div>
+              <div class="row why-we__list">
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">150</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Сайтов создали</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">60%</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Остались на техподдержку</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">13</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Лет на рынке</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="price">
+            <div class="container container--size-md price__container">
+              <h2 class="fadeIn wow u-title fs-6 price__title" data-wow-delay=".2s">Цены и решения</h2>
+              <div class="price__list">
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="price-card__col row__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Landing Page на Wordpress</h3>
+                        <div class="u-content price-card__description">
+                          <p>Недорогой современный сайт</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Быстрый сайт на удобной бесплатной CMS</li>
+                          <li>Доступные цены</li>
+                          <li>Мобильная адаптация</li>
+                          <li>Легкая система управления</li>
+                          <li>Дизайн или шаблон</li>
+                          <li>Наполнение 10 страниц</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="price-card__col row__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="fs-6 u-title price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 5 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="price-card__col row__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Визитка на Bitrix</h3>
+                        <div class="u-content price-card__description">
+                          <p>Простые решения для малого бизнеса</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Дизайн или шаблон</li>
+                          <li>Наполнение 10 страниц</li>
+                          <li>Профессиональная система управления</li>
+                          <li>Мобильная верстка</li>
+                          <li>Удобная и простая CMS</li>
+                          <li>Надежная защита от взлома</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="price-card__col row__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="fs-6 u-title price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 5 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="price-card__col row__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Визитка на Joomla</h3>
+                        <div class="u-content price-card__description">
+                          <p>Разработка уникальных сайтов, которые выделят Вашу компанию среди конкурентов</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Дизайн или шаблон</li>
+                          <li>Наполнение 10 страниц</li>
+                          <li>Тысячи бесплатных расширений и шаблонов</li>
+                          <li>Удобная бесплатная CMS</li>
+                          <li>Широкий функционал</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="price-card__col row__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="fs-6 u-title price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 5 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="price-card__col row__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Сайт-визитка с индивидуальным дизайном</h3>
+                        <div class="u-content price-card__description">
+                          <p>Функциональные и надежные решения для интернет маркетинга</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Наполнение 10 страниц</li>
+                          <li>CMS на Ваш выбор</li>
+                          <li>Отрисовка дизайна по вашему ТЗ</li>
+                          <li>Адаптивный дизайн</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="price-card__col row__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="fs-6 u-title price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 10 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="fadeIn wow appeal-choise" data-wow-delay=".2s">
+  <div class="container container--size-md appeal-choise__container">
+    <div class="appeal-choise__main">
+      <h2 class="fadeIn wow appeal-choise__main-title" data-wow-delay=".2s">Individual paket</h2>
+      <div class="appeal-choise__main-major">
+        <div class="appeal-choise__main-content">
+          <h3 class="appeal-choise__main-subtitle">Keling, muhokama qilamiz</h3>
+          <div class="u-content appeal-choise__main-text">
+            <p>Biz sizning ehtiyojlaringiz uchun individual yechimlarni taklif etamiz</p>
+          </div>
+        </div>
+        <div class="appeal-choise__main-aside">
+          <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient appeal-choise__main-btn btn--size-semi">
+            <span class="btn__inner">
+              <span class="btn__title">Biz bilan bog'laning</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          
+        </main>
+        
+        <footer class="footer site__footer">
+  <picture class="footer__bg">
+    
+    <img src="images/footer-bg.jpg" alt="" width="1920" height="505">
+  </picture>
+  <div class="container container--size-md footer__container">
+    <a href="/" class="logo footer__logo">
+      <picture class="logo__img">
+        <img src="images/brand-logo-white.svg" width="204" height="57" alt="Celion">
+      </picture>
+    </a>
+    <div class="footer__nav-wrapper">
+      <nav class="footer__nav" role="navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Портфолио и кейсы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Партнерская программа</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__sc sc-block">
+        <ul class="sc-block__list">
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-dribbble"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copyright">Celion © 2025. All rights reserved.</p>
+  </div>
+</footer>
+        
+      </div>
+      <div class="popup" data-popup="popup-form" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button type="button" class="js-button-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__main">
+        <p class="fs-6 title popup__title">Обратный звонок</p>
+        <p class="popup__description">Оставьте Ваши данные и мы свяжемся с&nbsp;Вами в ближайшее время.</p>
+        <form action="#" class="popup__form">
+          <input type="text" name="name" class="u-input u-input--size-md u-input--type-textarea popup__input u-input--theme-white-light" placeholder="Как к Вам обращаться?">
+          <input type="tel" name="phone" class="u-input u-input--size-md u-input--type-textarea js-phone-mask popup__input u-input--theme-white-light" required placeholder="Номер Вашего телефона*">
+          <button type="submit" class="btn btn--theme-accent-gradient btn--size-md popup__btn">
+            <span class="btn__inner">
+              <span class="btn__title">Заказать звонок</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup" data-popup="popup-thanks" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button type="button" class="js-button-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__main">
+        <div class="thanks-message">
+          <p class="fs-6 title thanks-message__title">Спасибо за заявку!</p>
+          <p class="thanks-message__description">Мы свяжемся с Вами в ближайшее время</p>
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 204" class="thanks-message__icon"><g clip-path="url(#a)"><path d="M102 204a102 102 0 1 0 0-204 102 102 0 0 0 0 204" fill="url(#b)"/><path d="M204 103.8a102 102 0 0 1-72.4 95.8l-58.1-58.1L160 60z" fill="url(#c)"/><path d="M164.2 69.8a14 14 0 0 1-4.1 9.8L95.6 144a14 14 0 0 1-19.6 0l-32-32a13.9 13.9 0 1 1 19.6-19.7l22.3 22.3L140.5 60a13.9 13.9 0 0 1 23.7 9.8" fill="#fff"/></g><defs><linearGradient id="b" x1="-5.8" y1="0" x2="257.3" y2="223" gradientUnits="userSpaceOnUse"><stop stop-color="#2D5DFF"/><stop offset="1" stop-color="#F51AD6"/></linearGradient><linearGradient id="c" x1="69.8" y1="60" x2="247.5" y2="200.8" gradientUnits="userSpaceOnUse"><stop stop-color="#2D5DFF"/><stop offset="1" stop-color="#F51AD6"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h204v204H0z"/></clipPath></defs></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="js/app.min.js??=v=20250418085545"></script>
+  </body>
+</html>

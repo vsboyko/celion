@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Celion - Разработка дизайна сайта'
+  })
+  <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
+
+    <div id="root" class="site">
+      <div class="site__pattern-bg"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--1"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--2"></div>
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'js-header-sticky site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main site__main">
+          <!-- website-section BEGIN -->
+          <section class="website-section">
+            <div class="container container--size-md website-section__container">
+              <div class="row website-section__row">
+                <div class="row__col--7 website-section__col website-section__col--content">
+                  <h1 class="wow fadeIn u-title website-section__title" data-wow-delay=".2s">Разработка дизайна сайта</h1>
+                  <div class="wow fadeIn u-content website-section__text" data-wow-delay=".4s">
+                    <p>Разработка надежных сайтов любой сложности для решения именно Ваших задач</p>
+                  </div>
+                  <ul class="js-wow-counter list-approve list-approve--theme-bg-grey website-section__services" data-animation-start=".6s" data-animation-step=".15s">
+                    <li class="wow fadeIn">Сайт на готовом решении</li>
+                    <li class="wow fadeIn">Шаблонный дизайн отрисовка 4 страниц</li>
+                    <li class="wow fadeIn">Индивидуальный дизайн отрисовка 4 страниц</li>
+                    <li class="wow fadeIn">Индивидуальный дизайн любого сайта с нуля</li>
+                  </ul>
+                </div>
+                <div class="row__col--5 website-section__col website-section__col--form">
+                  @@include('html/components/form-project.html')
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- website-section END -->
+          <!-- stages-design BEGIN -->
+          <section class="stages-design">
+            <div class="container container--size-md stages-design__container">
+              <div class="row stages-design__row">
+                <div class="row__col--5 stages-design__col stages-design__col--content">
+                  <div class="stages-design__content">
+                    <h2 class="wow fadeIn u-title fs-6 stages-design__title" data-wow-delay=".2s">Этапы разработки дизайна</h2>
+                    <div class="wow fadeIn u-content stages-design__description" data-wow-delay=".4s">
+                      <p>Клиентам веб-студии Soft Media Group предоставляется возможность выбрать удобное место и время встречи. По результатам собеседования менеджер составит техническое задание на разработку дизайна.</p>
+                    </div>
+                    <picture class="stages-design__hero">
+                      <!--<source
+                        srcset="images/stages-design-hero.webp"
+                        type="image/webp">-->
+                      <img
+                        src="images/stages-design-hero.jpg"
+                        alt="Этапы разработки дизайна"
+                        width="490"
+                        height="691">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row__col--7 stages-design__col stages-design__col--main">
+                  <div class="stages-design__main">
+                    <div class="wow fadeIn u-content stages-design__text" data-wow-delay=".6s">
+                      <p>Закажите разработку графической части сайта прямо сейчас – позвоните в офис компании Soft Media Group в Москве и доверьте эту задачу команде опытных дизайнеров! Концепт создается под ключ. Специально для каждого проекта разрабатывается индивидуальный дизайн с элементами фирменного стиля. Результат предоставляется клиенту в виде PSD-макета.</p>
+                    </div>
+                    <div class="row stages-design__list">
+                      <div class="row__col stages-design__list-col">
+                        <article class="stages-design-card stages-design__list-card">
+                          <header class="stages-design-card__header">
+                            <picture class="stages-design-card__picture">
+                              <img src="images/stages-design-card-icon-1.svg" width="36" height="36" alt="Бриф">
+                            </picture>
+                          </header>
+                          <div class="stages-design-card__content">
+                            <h3 class="fs-6 stages-design-card__title">Бриф</h3>
+                            <div class="u-content stages-design-card__text">
+                              <p>Заполненный бриф передается специалистам – в этом документе имеется вся необходимая информация для выполнения заказа с учетом всех пожеланий клиента. Уже на этом этапе дизайнер определяется с выбранным стилем исполнения графической части, набором цветовых решений, блоками для внедрения фирменного стиля и др.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col stages-design__list-col">
+                        <article class="stages-design-card stages-design__list-card">
+                          <header class="stages-design-card__header">
+                            <picture class="stages-design-card__picture">
+                              <img src="images/stages-design-card-icon-2.svg" width="36" height="36" alt="Концепция дизайна">
+                            </picture>
+                          </header>
+                          <div class="stages-design-card__content">
+                            <h3 class="fs-6 stages-design-card__title">Концепция дизайна</h3>
+                            <div class="u-content stages-design-card__text">
+                              <p>Техническая разработка сайта осуществляется по прототипу. Предварительная концепция дизайна создается с учетом результатов исследования веб- ресурсов конкурентов и портретов среднестатистического клиента компании заказчика. Дизайнер создает прототип будущего макета, который представляет собой наглядную схему структуры визуального исполнения сайта.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col stages-design__list-col">
+                        <article class="stages-design-card stages-design__list-card">
+                          <header class="stages-design-card__header">
+                            <picture class="stages-design-card__picture">
+                              <img src="images/stages-design-card-icon-3.svg" width="36" height="36" alt="Прототип">
+                            </picture>
+                          </header>
+                          <div class="stages-design-card__content">
+                            <h3 class="fs-6 stages-design-card__title">Прототип</h3>
+                            <div class="u-content stages-design-card__text">
+                              <p>На прототипе отмечены следующие составляющие дизайна: название компании, область публикации контента, хедер, галерея и другие блоки, логотип, футер, сайдбар (при наличии).</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- stages-design END -->
+          <!-- why-we BEGIN -->
+          <section class="why-we">
+            <div class="container container--size-md why-we__container">
+              <h2 class="wow fadeIn u-title fs-6 why-we__title" data-wow-delay=".2s">Преимущества Celion Group</h2>
+              <div class="wow fadeIn u-content why-we__text" data-wow-delay=".4s">
+                <p>Вам необходим интерактивный сайт с большим количеством графических элементов? Наша команда имеет большой опыт в реализации данных проектов! Celion Group разрабатывает интерактивные веб-ресурсы любой сложности! Многие клиенты заказывают верстку в дополнение к макету. Программист сверстает готовый шаблон и установит на ваш сайт. Дополнительные услуги оплачиваются отдельно от основного заказа. Позвоните нам прямо сейчас, и команда специалистов разработает продающий дизайн для вашего сайта!</p>
+              </div>
+            </div>
+          </section>
+          <!-- why-we END -->
+          <!-- price BEGIN -->
+          <section class="price">
+            <div class="container container--size-md price__container">
+              <h2 class="wow fadeIn u-title fs-6 price__title" data-wow-delay=".2s">Тарифы</h2>
+              <div class="price__list">
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Эконом</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Создадим классическую структуру сайта без персонализации</li>
+                          <li>Минимальная проработка деталей дизайна</li>
+                          <li>Простое подключение дизайна сайта: используем готовые шаблоны и блоки</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 1-3 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Бизнес</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Создадим стандартную структуру сайта, которая включает в себя все необходимые элементы</li>
+                          <li>Проработаем важные детали дизайна для максимального удобства</li>
+                          <li>Интегрируем разработанный дизайн в код веб-страницы. Добавим стили и правила оформления элементов</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 10-15 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Премиум</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Индивидуальная структура сайта. Учтем особенности и потребности вашего проекта</li>
+                          <li>Повышенная детализация дизайна. Проработка всех элементов с учетом ваших пожеланий и специфики бизнеса</li>
+                          <li>Интегрируем все элементы дизайна и создадим гармоничный и функциональный визуальный образ сайта</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 15-20 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Эксклюзив</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Уникальная структура сайта. Все для удобства пользователя и достижения целей вашего бизнеса</li>
+                          <li>Максимальная проработка деталей: от иконок до изображений</li>
+                          <li>Интегрируем все элементы дизайна и создадим гармоничный и функциональный визуальный образ сайта</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 30-40 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- price END -->
+          <!-- appeal-choise BEGIN -->
+          @@include('html/components/appeal-choise.html')
+          <!-- appeal-choise END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

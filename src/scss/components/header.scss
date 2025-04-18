@@ -47,7 +47,7 @@
   &.is-sticky {
     .header__logo {
       @media (min-width: $md-mf) {
-        max-width: 164rem;
+        width: 164rem;
         margin-right: 44rem;
       }
     }
@@ -65,10 +65,10 @@
     }
   }
   &__logo {
-    max-width: 204rem;
+    width: 204rem;
     flex-shrink: 0;
     @media (max-width: $md) {
-      max-width: 126rem;
+      width: 126rem;
       top: 0;
     }
   }

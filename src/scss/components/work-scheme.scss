@@ -41,6 +41,16 @@
   &__slider-nav {
     max-width: 280rem;
     flex: 0 0 280rem;
+    &.size {
+      &--md {
+        max-width: 40%;
+        flex: 0 0 40%;
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
     @media (max-width: $md) {
       max-width: 100%;
       margin-bottom: var(--gap-container);
@@ -89,6 +99,16 @@
     flex: 0 0 calc(100% - 280rem - var(--gap-fluid));
     border-radius: $radiusSemi;
     overflow: hidden;
+    &.size {
+      &--md {
+        max-width: 56%;
+        flex: 0 0 56%;
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
     @media (max-width: $md) {
       max-width: 100%;
       flex-basis: 100%;

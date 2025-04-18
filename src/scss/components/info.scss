@@ -1,0 +1,40 @@
+.info {
+  padding: var(--section-y) 0;
+  @media (max-width: $md) {
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 34rem;
+    font-size: var(--fs-22);
+    @media (max-width: $md) {
+      margin-bottom: var(--title-y-md);
+    }
+  }
+  &__text {
+    max-width: 1100rem;
+    margin-bottom: 68rem;
+    font-weight: 500;
+    font-size: var(--fs-10);
+    line-height: $lineHeight4;
+    @media (max-width: $md) {
+      max-width: 100%;
+      margin-bottom: 45rem;
+      font-size: var(--fs-13);
+    }
+  }
+  &__list {
+    margin-bottom: -100rem;
+    counter-reset: infoCardsCounter;
+    &-col {
+      margin-bottom: 100rem;
+      counter-increment: infoCardsCounter;
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+    }
+  }
+}

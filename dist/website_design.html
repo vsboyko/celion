@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250418085545">
+  <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Celion">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <title>Celion - Разработка дизайна сайта</title>
+</head>
+  <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
+
+    <div id="root" class="site">
+      <div class="site__pattern-bg"></div>
+      <div class="site__planet u-planet u-planet--theme-1 site__planet--1"></div>
+      <div class="site__planet u-planet u-planet--theme-1 site__planet--2"></div>
+      <div class="site__inner">
+        
+        <header class="header js-header-sticky site__header">
+  <div class="container container--size-md header__container">
+    <div class="header__inner">
+      <a href="/" class="logo header__logo">
+        <picture class="logo__img">
+          <img src="images/brand-logo-white.svg" width="204" height="57" alt="Celion">
+        </picture>
+      </a>
+      <button type="button" class="d-lg-block header__toggle js-nav-toggle">
+        <svg class="u-icon">
+          <use xlink:href="images/icons/icons.svg#menu-open"></use>
+        </svg>
+        <svg class="u-icon">
+          <use xlink:href="images/icons/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__dropdown">
+      <nav class="header__nav u-nav" role="navigation">
+        <ul class="u-nav__list">
+          <li class="u-nav__item">
+            <a href="#portfolio" class="u-nav__link js-anchor">Портфолио и кейсы</a>
+          </li>
+          <li class="u-nav__item">
+            <button type="button" class="js-nav-submenu-toggle u-nav__btn-submenu">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#arrow-down-1"></use>
+              </svg>
+            </button>
+            <a href="javascript:void(0);" class="u-nav__link">Услуги</a>
+            <ul class="u-nav__dropdown">
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 1</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 2</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 3</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 4</a>
+              </li>
+              <li class="u-nav__dropdown-item">
+                <a href="#" class="u-nav__dropdown-link">Submenu 5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="u-nav__item">
+            <a href="partners.html" class="u-nav__link">Партнерская программа</a>
+          </li>
+          <li class="u-nav__item">
+            <a href="contacts.html" class="u-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn-group header__btn-group">
+        <div class="btn-group__inner">
+          <a href="static/files/presentation.pdf" class="btn btn--size-sm btn--theme-white-transparent js-open-pdf">
+            <span class="btn__inner">
+              <span class="btn__icon btn__icon--dir-ltr">
+                <svg class="u-icon">
+                  <use xlink:href="images/icons/icons.svg#triangle-1"></use>
+                </svg>
+              </span>
+              <span class="btn__title fw-500">Презентация</span>
+            </span>
+          </a>
+          <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient btn--size-sm">
+            <span class="btn__inner">
+              <span class="btn__title">ОСТАВИТЬ ЗАЯВКУ</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        
+        <main role="main" class="site__main site__main">
+          
+          <section class="website-section">
+            <div class="container container--size-md website-section__container">
+              <div class="row website-section__row">
+                <div class="row__col--7 website-section__col website-section__col--content">
+                  <h1 class="fadeIn wow u-title website-section__title" data-wow-delay=".2s">Разработка дизайна сайта</h1>
+                  <div class="fadeIn wow u-content website-section__text" data-wow-delay=".4s">
+                    <p>Разработка надежных сайтов любой сложности для решения именно Ваших задач</p>
+                  </div>
+                  <ul class="list-approve js-wow-counter list-approve--theme-bg-grey website-section__services" data-animation-start=".6s" data-animation-step=".15s">
+                    <li class="fadeIn wow">Сайт на готовом решении</li>
+                    <li class="fadeIn wow">Шаблонный дизайн отрисовка 4 страниц</li>
+                    <li class="fadeIn wow">Индивидуальный дизайн отрисовка 4 страниц</li>
+                    <li class="fadeIn wow">Индивидуальный дизайн любого сайта с нуля</li>
+                  </ul>
+                </div>
+                <div class="row__col--5 website-section__col website-section__col--form">
+                  <form action="#" class="js-wow-counter u-form-project website-section__form">
+  <p class="fs-6 u-title u-form-project__title">Обсудить проект</p>
+  <input type="text" name="name" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white u-form-project__input" placeholder="Ваше имя">
+  <div class="u-form-project__input input-select js-input-select">
+    <div class="input-select__aside">
+      <button type="button" class="input-select__btn js-input-select-btn-toggle"></button>
+      <div class="input-select__dropdown">
+        <button type="button" class="input-select__btn js-input-select-btn-choose is-active">
+          <svg class="u-icon">
+            <use xlink:href="images/icons/icons.svg#phone"></use>
+          </svg>
+        </button>
+        <button type="button" class="input-select__btn js-input-select-btn-choose">
+          <svg class="u-icon">
+            <use xlink:href="images/icons/icons.svg#email"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="input-select__inputs">
+      <input type="tel" name="phone" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white input-select__input js-input-select-el is-active js-phone-mask" required placeholder="Номер Вашего телефона*">
+      <input type="email" name="email" class="u-input u-input--size-md u-input--type-textarea u-input--theme-white input-select__input js-input-select-el" required placeholder="Ваш e-mail*">
+    </div>
+  </div>
+  <button type="submit" class="btn btn--theme-accent-gradient btn--size-md u-form-project__btn">
+    <span class="btn__inner">
+      <span class="btn__title">Отправить</span>
+    </span>
+  </button>
+  <p class="u-form-project__privacy u-privacy">Нажимая на кнопку «Отправить», Вы соглашаетесь с <a href="https://www.google.com/" target="_blank">политикой обработки персональных данных</a> и <a href="https://www.google.com/" target="_blank">получением информационных рассылок</a>.</p>
+</form>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="stages-design">
+            <div class="container container--size-md stages-design__container">
+              <div class="row stages-design__row">
+                <div class="row__col--5 stages-design__col stages-design__col--content">
+                  <div class="stages-design__content">
+                    <h2 class="fadeIn wow u-title fs-6 stages-design__title" data-wow-delay=".2s">Этапы разработки дизайна</h2>
+                    <div class="fadeIn wow u-content stages-design__description" data-wow-delay=".4s">
+                      <p>Клиентам веб-студии Soft Media Group предоставляется возможность выбрать удобное место и время встречи. По результатам собеседования менеджер составит техническое задание на разработку дизайна.</p>
+                    </div>
+                    <picture class="stages-design__hero">
+                      
+                      <img src="images/stages-design-hero.jpg" alt="Этапы разработки дизайна" width="490" height="691">
+                    </picture>
+                  </div>
+                </div>
+                <div class="row__col--7 stages-design__col stages-design__col--main">
+                  <div class="stages-design__main">
+                    <div class="fadeIn wow u-content stages-design__text" data-wow-delay=".6s">
+                      <p>Закажите разработку графической части сайта прямо сейчас – позвоните в офис компании Soft Media Group в Москве и доверьте эту задачу команде опытных дизайнеров! Концепт создается под ключ. Специально для каждого проекта разрабатывается индивидуальный дизайн с элементами фирменного стиля. Результат предоставляется клиенту в виде PSD-макета.</p>
+                    </div>
+                    <div class="row stages-design__list">
+                      <div class="row__col stages-design__list-col">
+                        <article class="stages-design-card stages-design__list-card">
+                          <header class="stages-design-card__header">
+                            <picture class="stages-design-card__picture">
+                              <img src="images/stages-design-card-icon-1.svg" width="36" height="36" alt="Бриф">
+                            </picture>
+                          </header>
+                          <div class="stages-design-card__content">
+                            <h3 class="fs-6 stages-design-card__title">Бриф</h3>
+                            <div class="u-content stages-design-card__text">
+                              <p>Заполненный бриф передается специалистам – в этом документе имеется вся необходимая информация для выполнения заказа с учетом всех пожеланий клиента. Уже на этом этапе дизайнер определяется с выбранным стилем исполнения графической части, набором цветовых решений, блоками для внедрения фирменного стиля и др.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col stages-design__list-col">
+                        <article class="stages-design-card stages-design__list-card">
+                          <header class="stages-design-card__header">
+                            <picture class="stages-design-card__picture">
+                              <img src="images/stages-design-card-icon-2.svg" width="36" height="36" alt="Концепция дизайна">
+                            </picture>
+                          </header>
+                          <div class="stages-design-card__content">
+                            <h3 class="fs-6 stages-design-card__title">Концепция дизайна</h3>
+                            <div class="u-content stages-design-card__text">
+                              <p>Техническая разработка сайта осуществляется по прототипу. Предварительная концепция дизайна создается с учетом результатов исследования веб- ресурсов конкурентов и портретов среднестатистического клиента компании заказчика. Дизайнер создает прототип будущего макета, который представляет собой наглядную схему структуры визуального исполнения сайта.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col stages-design__list-col">
+                        <article class="stages-design-card stages-design__list-card">
+                          <header class="stages-design-card__header">
+                            <picture class="stages-design-card__picture">
+                              <img src="images/stages-design-card-icon-3.svg" width="36" height="36" alt="Прототип">
+                            </picture>
+                          </header>
+                          <div class="stages-design-card__content">
+                            <h3 class="fs-6 stages-design-card__title">Прототип</h3>
+                            <div class="u-content stages-design-card__text">
+                              <p>На прототипе отмечены следующие составляющие дизайна: название компании, область публикации контента, хедер, галерея и другие блоки, логотип, футер, сайдбар (при наличии).</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="why-we">
+            <div class="container container--size-md why-we__container">
+              <h2 class="fadeIn wow u-title fs-6 why-we__title" data-wow-delay=".2s">Преимущества Celion Group</h2>
+              <div class="fadeIn wow u-content why-we__text" data-wow-delay=".4s">
+                <p>Вам необходим интерактивный сайт с большим количеством графических элементов? Наша команда имеет большой опыт в реализации данных проектов! Celion Group разрабатывает интерактивные веб-ресурсы любой сложности! Многие клиенты заказывают верстку в дополнение к макету. Программист сверстает готовый шаблон и установит на ваш сайт. Дополнительные услуги оплачиваются отдельно от основного заказа. Позвоните нам прямо сейчас, и команда специалистов разработает продающий дизайн для вашего сайта!</p>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="price">
+            <div class="container container--size-md price__container">
+              <h2 class="fadeIn wow u-title fs-6 price__title" data-wow-delay=".2s">Тарифы</h2>
+              <div class="price__list">
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Эконом</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Создадим классическую структуру сайта без персонализации</li>
+                          <li>Минимальная проработка деталей дизайна</li>
+                          <li>Простое подключение дизайна сайта: используем готовые шаблоны и блоки</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 1-3 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Бизнес</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Создадим стандартную структуру сайта, которая включает в себя все необходимые элементы</li>
+                          <li>Проработаем важные детали дизайна для максимального удобства</li>
+                          <li>Интегрируем разработанный дизайн в код веб-страницы. Добавим стили и правила оформления элементов</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 10-15 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Премиум</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Индивидуальная структура сайта. Учтем особенности и потребности вашего проекта</li>
+                          <li>Повышенная детализация дизайна. Проработка всех элементов с учетом ваших пожеланий и специфики бизнеса</li>
+                          <li>Интегрируем все элементы дизайна и создадим гармоничный и функциональный визуальный образ сайта</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 15-20 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="price-card__title">Эксклюзив</h3>
+                        <ul class="list-approve price-card__info">
+                          <li>Уникальная структура сайта. Все для удобства пользователя и достижения целей вашего бизнеса</li>
+                          <li>Максимальная проработка деталей: от иконок до изображений</li>
+                          <li>Интегрируем все элементы дизайна и создадим гармоничный и функциональный визуальный образ сайта</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 30-40 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="fadeIn wow appeal-choise" data-wow-delay=".2s">
+  <div class="container container--size-md appeal-choise__container">
+    <div class="appeal-choise__main">
+      <h2 class="fadeIn wow appeal-choise__main-title" data-wow-delay=".2s">Individual paket</h2>
+      <div class="appeal-choise__main-major">
+        <div class="appeal-choise__main-content">
+          <h3 class="appeal-choise__main-subtitle">Keling, muhokama qilamiz</h3>
+          <div class="u-content appeal-choise__main-text">
+            <p>Biz sizning ehtiyojlaringiz uchun individual yechimlarni taklif etamiz</p>
+          </div>
+        </div>
+        <div class="appeal-choise__main-aside">
+          <button type="button" data-modal="popup-form" class="btn btn--theme-accent-gradient appeal-choise__main-btn btn--size-semi">
+            <span class="btn__inner">
+              <span class="btn__title">Biz bilan bog'laning</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          
+        </main>
+        
+        <footer class="footer site__footer">
+  <picture class="footer__bg">
+    
+    <img src="images/footer-bg.jpg" alt="" width="1920" height="505">
+  </picture>
+  <div class="container container--size-md footer__container">
+    <a href="/" class="logo footer__logo">
+      <picture class="logo__img">
+        <img src="images/brand-logo-white.svg" width="204" height="57" alt="Celion">
+      </picture>
+    </a>
+    <div class="footer__nav-wrapper">
+      <nav class="footer__nav" role="navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Портфолио и кейсы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Партнерская программа</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__sc sc-block">
+        <ul class="sc-block__list">
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-dribbble"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sc-block__item">
+            <a href="#" class="sc-block__link">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#sc-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copyright">Celion © 2025. All rights reserved.</p>
+  </div>
+</footer>
+        
+      </div>
+      <div class="popup" data-popup="popup-form" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button type="button" class="js-button-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__main">
+        <p class="fs-6 title popup__title">Обратный звонок</p>
+        <p class="popup__description">Оставьте Ваши данные и мы свяжемся с&nbsp;Вами в ближайшее время.</p>
+        <form action="#" class="popup__form">
+          <input type="text" name="name" class="u-input u-input--size-md u-input--type-textarea popup__input u-input--theme-white-light" placeholder="Как к Вам обращаться?">
+          <input type="tel" name="phone" class="u-input u-input--size-md u-input--type-textarea js-phone-mask popup__input u-input--theme-white-light" required placeholder="Номер Вашего телефона*">
+          <button type="submit" class="btn btn--theme-accent-gradient btn--size-md popup__btn">
+            <span class="btn__inner">
+              <span class="btn__title">Заказать звонок</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup" data-popup="popup-thanks" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button type="button" class="js-button-close popup__btn-close">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__main">
+        <div class="thanks-message">
+          <p class="fs-6 title thanks-message__title">Спасибо за заявку!</p>
+          <p class="thanks-message__description">Мы свяжемся с Вами в ближайшее время</p>
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 204" class="thanks-message__icon"><g clip-path="url(#a)"><path d="M102 204a102 102 0 1 0 0-204 102 102 0 0 0 0 204" fill="url(#b)"/><path d="M204 103.8a102 102 0 0 1-72.4 95.8l-58.1-58.1L160 60z" fill="url(#c)"/><path d="M164.2 69.8a14 14 0 0 1-4.1 9.8L95.6 144a14 14 0 0 1-19.6 0l-32-32a13.9 13.9 0 1 1 19.6-19.7l22.3 22.3L140.5 60a13.9 13.9 0 0 1 23.7 9.8" fill="#fff"/></g><defs><linearGradient id="b" x1="-5.8" y1="0" x2="257.3" y2="223" gradientUnits="userSpaceOnUse"><stop stop-color="#2D5DFF"/><stop offset="1" stop-color="#F51AD6"/></linearGradient><linearGradient id="c" x1="69.8" y1="60" x2="247.5" y2="200.8" gradientUnits="userSpaceOnUse"><stop stop-color="#2D5DFF"/><stop offset="1" stop-color="#F51AD6"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h204v204H0z"/></clipPath></defs></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="js/app.min.js??=v=20250418085545"></script>
+  </body>
+</html>

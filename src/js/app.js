@@ -10,6 +10,7 @@
 import { SetVH } from './modules/SetVH.js';
 import BaseHelpers from './helpers/BaseHelpers.js';
 import initWOW from './modules/WOW.js';
+import { WowCounter } from './modules/wowCounter';
 import StickyHeader from './modules/StickyHeader.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import { SmoothScroll } from './modules/SmoothScroll.js';
@@ -21,6 +22,7 @@ import InitSliders from './modules/SwiperInit.js';
 import PdfViewer from './modules/PdfViewer.js';
 import FaqCard from './modules/FaqCard.js';
 import FileUploader from './modules/FileUploader.js';
+import { InputSelect } from './modules/InputSelect.js';
 
 // set vh
 SetVH();
@@ -31,7 +33,9 @@ BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
 document.addEventListener('DOMContentLoaded', function() {
+  // wow animation
   initWOW(190);
+  WowCounter();
   // header sticky
   new StickyHeader('.js-header-sticky', 'is-sticky');
   // nav active anchor
@@ -54,4 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
   new FaqCard();
   // FileUploader
   new FileUploader('.js-file-upload');
+
+  InputSelect();
 });

@@ -53,8 +53,13 @@ html{-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size
 
 html {
   font-size: $siteResolution;
-  font-size: .05208333333vw;
   scroll-behavior: unset;
+  @media (max-width: 1880px) {
+    font-size: .05208333333vw;
+  }
+  @media (min-width: 1940px) {
+    font-size: .05208333333vw;
+  }
   @media (max-width: 991px) {
     font-size: .26666666666vw;
   }

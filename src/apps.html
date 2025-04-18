@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Celion - Приложения для смартфонов'
+  })
+  <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
+
+    <div id="root" class="site">
+      <div class="site__pattern-bg"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--1"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--2"></div>
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'js-header-sticky site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main site__main">
+          <!-- website-section BEGIN -->
+          <section class="website-section">
+            <div class="container container--size-md website-section__container">
+              <div class="row website-section__row">
+                <div class="row__col--7 website-section__col website-section__col--content">
+                  <h1 class="wow fadeIn u-title website-section__title" data-wow-delay=".2s">Приложения для смартфонов</h1>
+                  <div class="wow fadeIn u-content website-section__text" data-wow-delay=".4s">
+                    <p>Разработка надежных сайтов любой сложности для решения именно Ваших задач</p>
+                  </div>
+                  <ul class="js-wow-counter list-approve list-approve--theme-bg-grey website-section__services" data-animation-start=".6s" data-animation-step=".15s">
+                    <li class="wow fadeIn">Профессиональная разработка</li>
+                    <li class="wow fadeIn">Уникальный дизайн</li>
+                    <li class="wow fadeIn">Продуманный интерфейс</li>
+                    <li class="wow fadeIn">Инновационные разработки</li>
+                  </ul>
+                </div>
+                <div class="row__col--5 website-section__col website-section__col--form">
+                  @@include('html/components/form-project.html')
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- website-section END -->
+          <!-- website-order BEGIN -->
+          <section class="website-order">
+            <div class="container container--size-md website-order__container">
+              <div class="row website-order__row">
+                <div class="row__col--5 website-order__col website-order__col--media">
+                  <picture class="website-order__hero">
+                    <!--<source
+                      srcset="images/apps-order-hero.webp"
+                      type="image/webp">-->
+                    <img
+                      src="images/apps-order-hero.jpg"
+                      width="525"
+                      height="322"
+                      alt="Заказать мобильное приложение">
+                  </picture>
+                </div>
+                <div class="row__col--7 website-order__col website-order__col--content">
+                  <div class="website-order__content">
+                    <h3 class="wow fadeIn u-title fs-6 website-order__suptitle" data-wow-delay=".2s">Наличие у интернет-магазина или компании отдельного приложения для Android/IOS содействует формированию благоприятного мнения у потребителей, повышает количество клиентов и реализованных услуг.</h3>
+                    <div class="wow fadeIn u-content website-order__text" data-wow-delay=".4s">
+                      <p>Многим людям гораздо удобнее пользоваться приложением на телефоне, чем осваивать функционал сайта. Наша веб-студия полного цикла Celion Group в Узбекистане предлагает разработку приложений для смартфонов под популярные платформы для улучшения вашего бизнеса. Наша команда занимается разработкой приложений уже 9 лет. Создаем индивидуальный дизайн отражающего программного продукта фирменный стиль.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--12 website-order__col website-order__col--footer">
+                  <footer class="website-order__footer-section">
+                    <h3 class="wow fadeIn u-title fs-6 website-order__subtitle" data-wow-delay=".4s">Заказать мобильное приложение от 140 000 000 mln</h3>
+                    <button type="button" class="btn btn--theme-accent-gradient btn--size-md website-order__footer-section-btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Оформить заявку</span>
+                      </span>
+                    </button>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- website-order END -->
+          <!-- info BEGIN -->
+          <section class="info">
+            <div class="container container--size-md info__container">
+              <h2 class="wow fadeIn u-title fs-6 info__title" data-wow-delay=".2s">Что входит в разработку приложения для смартфона?</h2>
+              <div class="wow fadeIn u-content info__text" data-wow-delay=".4s">
+                <p>Разработка приложений для смартфонов состоит из следующих этапов:</p>
+              </div>
+              <div class="row info__list">
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Формирование технического задания</h3>
+                      <div class="u-content info-card__text">
+                        <p>В котором обсуждаются идея и цели будущего приложения, его функционал и внешний вид.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Анализ рынка</h3>
+                      <div class="u-content info-card__text">
+                        <p>Мы анализируем программные продукты конкурентов и выбираем оптимальный тип приложения, соответствующий поставленным задачам.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Утверждение ТЗ и дизайн</h3>
+                      <div class="u-content info-card__text">
+                        <p>После утверждения Заказчиком, наша команда приступает к разработке дизайна программы (оболочки). Мы прорисовываем детали кнопок, меню, баннеры и логотип. Создается архитектура.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Программная часть</h3>
+                      <div class="u-content info-card__text">
+                        <p>Далее настраивается программная часть с функционалом (поиск товаров/услуг, чат с менеджером, возможность добавлять комментарии о продукте, оплата банковскими картами, оповещение, авторизация через соц. сети, формирование корзины покупок и т. д.).</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Тестирование смартфон</h3>
+                      <div class="u-content info-card__text">
+                        <p>После этого мы тестируем электронный продукт на отсутствие ошибок и сбоев, что гарантирует корректную работу приложения.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Приложение готово</h3>
+                      <div class="u-content info-card__text">
+                        <p>На финальной стадии продукт публикуется на Google Play и iTunes.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- info END -->
+          <!-- why-we BEGIN -->
+          <section class="why-we">
+            <div class="container container--size-md why-we__container">
+              <h2 class="wow fadeIn u-title fs-6 why-we__title" data-wow-delay=".2s">Celion Group</h2>
+              <div class="wow fadeIn u-content why-we__text" data-wow-delay=".4s">
+                <p>По просьбе заказчика возможно создание раздела с корпоративной галереей, содержащей фотографии и видео. Визитка имеет простую и понятную структуру, в&nbsp;которой с первого взгляда разберется любой пользователь. Вся информация находится в&nbsp;пределах одного экрана. Разработка одностраничных сайтов требует минимального количества ресурсов и&nbsp;временных затрат. В плане расходов на реализацию проекта это – самое выгодное решение!</p>
+              </div>
+              <div class="row why-we__list">
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">13</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Лет на рынке</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">1 год</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Техподдержка после сдачи проект</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">∞</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Реализуем самые сложные задачи</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- why-we END -->
+          <!-- work-scheme BEGIN -->
+          <section class="work-scheme">
+            <picture class="d-md-none work-scheme__bg">
+              <source
+                srcset="images/work-scheme-bg.webp"
+                type="image/webp">
+              <img
+                src="images/work-scheme-bg.png"
+                alt="Схема работы"
+                width="1920"
+                height="1080">
+            </picture>
+            <div class="container container--size-md work-scheme__container">
+              <h2 class="wow fadeIn u-title fs-6 work-scheme__title" data-wow-delay=".2s">Цены разработки мобильных приложений</h2>
+              <div class="work-scheme__slider-wrapper">
+                <div class="wow fadeIn work-scheme__slider-nav size--md" data-wow-delay=".4s">
+                  <div class="js-work-scheme-slider-nav-init swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide work-scheme__nav-slide" data-index="0">
+                        <div class="services-radio services-radio--theme-simple work-scheme__slider-nav-card is-active">
+                          <div class="services-radio__inner">
+                            <div class="services-radio__content">
+                              <h3 class="services-radio__suptitle">Пилотный проект</h3>
+                              <p class="services-radio__price">90 000 mln</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide work-scheme__nav-slide" data-index="1">
+                        <div class="services-radio services-radio--theme-simple work-scheme__slider-nav-card">
+                          <div class="services-radio__inner">
+                            <div class="services-radio__content">
+                              <h3 class="services-radio__suptitle">Малый проект</h3>
+                              <p class="services-radio__price">190 000 mln</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide work-scheme__nav-slide" data-index="2">
+                        <div class="services-radio services-radio--theme-simple work-scheme__slider-nav-card">
+                          <div class="services-radio__inner">
+                            <div class="services-radio__content">
+                              <h3 class="services-radio__suptitle">Средний проект</h3>
+                              <p class="services-radio__price">590 000 mln</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide work-scheme__nav-slide" data-index="3">
+                        <div class="services-radio services-radio--theme-simple work-scheme__slider-nav-card">
+                          <div class="services-radio__inner">
+                            <div class="services-radio__content">
+                              <h3 class="services-radio__suptitle">Крупный проект</h3>
+                              <p class="services-radio__price">Индивидуальные условия</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wow fadeIn work-scheme__slider-main size--md" data-wow-delay=".6s">
+                  <div class="js-work-scheme-slider-init swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide work-scheme__slider-main-slide">
+                        <article class="u-box project-price work-scheme__slider-main-card">
+                          <h3 class="project-price__title">Пилотный проект</h3>
+                          <p class="project-price__subtitle">В стоимость входит:</p>
+                          <table class="project-price__table">
+                            <tbody>
+                              <tr>
+                                <td>Соглашение о неразглашении данных, НДА</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Договор</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Подготовка дизайна для приложения</td>
+                                <td>типовой</td>
+                              </tr>
+                              <tr>
+                                <td>Сроки</td>
+                                <td>от 2 недель</td>
+                              </tr>
+                              <tr>
+                                <td>Гарантия андроид 1 месяц</td>
+                                <td>1 месяц</td>
+                              </tr>
+                              <tr>
+                                <td>Разработка серверной части приложения</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="project-price__footer">
+                            <button type="button" class="btn btn--theme-accent-gradient btn--size-md project-price__footer-btn">
+                              <span class="btn__inner">
+                                <span class="btn__title">Заказать проект</span>
+                              </span>
+                            </button>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide work-scheme__slider-main-slide">
+                        <article class="u-box project-price work-scheme__slider-main-card">
+                          <h3 class="project-price__title">Малый проект</h3>
+                          <p class="project-price__subtitle">В стоимость входит:</p>
+                          <table class="project-price__table">
+                            <tbody>
+                              <tr>
+                                <td>Соглашение о неразглашении данных, НДА</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Договор</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Подготовка дизайна для приложения</td>
+                                <td>типовой</td>
+                              </tr>
+                              <tr>
+                                <td>Сроки</td>
+                                <td>от 2 недель</td>
+                              </tr>
+                              <tr>
+                                <td>Гарантия андроид 1 месяц</td>
+                                <td>1 месяц</td>
+                              </tr>
+                              <tr>
+                                <td>Разработка серверной части приложения</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="project-price__footer">
+                            <button type="button" class="btn btn--theme-accent-gradient btn--size-md project-price__footer-btn">
+                              <span class="btn__inner">
+                                <span class="btn__title">Заказать проект</span>
+                              </span>
+                            </button>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide work-scheme__slider-main-slide">
+                        <article class="u-box project-price work-scheme__slider-main-card">
+                          <h3 class="project-price__title">Средний проект</h3>
+                          <p class="project-price__subtitle">В стоимость входит:</p>
+                          <table class="project-price__table">
+                            <tbody>
+                              <tr>
+                                <td>Соглашение о неразглашении данных, НДА</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Договор</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Подготовка дизайна для приложения</td>
+                                <td>типовой</td>
+                              </tr>
+                              <tr>
+                                <td>Сроки</td>
+                                <td>от 2 недель</td>
+                              </tr>
+                              <tr>
+                                <td>Гарантия андроид 1 месяц</td>
+                                <td>1 месяц</td>
+                              </tr>
+                              <tr>
+                                <td>Разработка серверной части приложения</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="project-price__footer">
+                            <button type="button" class="btn btn--theme-accent-gradient btn--size-md project-price__footer-btn">
+                              <span class="btn__inner">
+                                <span class="btn__title">Заказать проект</span>
+                              </span>
+                            </button>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide work-scheme__slider-main-slide">
+                        <article class="u-box project-price work-scheme__slider-main-card">
+                          <h3 class="project-price__title">Крупный проект</h3>
+                          <p class="project-price__subtitle">В стоимость входит:</p>
+                          <table class="project-price__table">
+                            <tbody>
+                              <tr>
+                                <td>Соглашение о неразглашении данных, НДА</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Договор</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Подготовка дизайна для приложения</td>
+                                <td>типовой</td>
+                              </tr>
+                              <tr>
+                                <td>Сроки</td>
+                                <td>от 2 недель</td>
+                              </tr>
+                              <tr>
+                                <td>Гарантия андроид 1 месяц</td>
+                                <td>1 месяц</td>
+                              </tr>
+                              <tr>
+                                <td>Разработка серверной части приложения</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="project-price__footer">
+                            <button type="button" class="btn btn--theme-accent-gradient btn--size-md project-price__footer-btn">
+                              <span class="btn__inner">
+                                <span class="btn__title">Заказать проект</span>
+                              </span>
+                            </button>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- work-scheme END -->
+          <!-- appeal-choise BEGIN -->
+          @@include('html/components/appeal-choise.html')
+          <!-- appeal-choise END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

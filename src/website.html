@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Celion - Создание сайта-визитки'
+  })
+  <body class="u-scrollbar">
+    <iframe id="pdfViewer"></iframe>
+
+    <div id="root" class="site">
+      <div class="site__pattern-bg"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--1"></div>
+      <div class="u-planet u-planet--theme-1 site__planet site__planet--2"></div>
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'js-header-sticky site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main site__main">
+          <!-- website-section BEGIN -->
+          <section class="website-section">
+            <div class="container container--size-md website-section__container">
+              <div class="row website-section__row">
+                <div class="row__col--7 website-section__col website-section__col--content">
+                  <h1 class="wow fadeIn u-title website-section__title" data-wow-delay=".2s">Создание сайта-визитки</h1>
+                  <div class="wow fadeIn u-content website-section__text" data-wow-delay=".4s">
+                    <p>Разработка надежных сайтов любой сложности для решения именно Ваших задач</p>
+                  </div>
+                  <ul class="js-wow-counter list-approve list-approve--theme-bg-grey website-section__services" data-animation-start=".6s" data-animation-step=".15s">
+                    <li class="wow fadeIn">Перенос сайта на CMS WordPress</li>
+                    <li class="wow fadeIn">Продвижение сайта-визитки</li>
+                    <li class="wow fadeIn">Создание простого сайта с нуля</li>
+                    <li class="wow fadeIn">Сайт на готовом решении</li>
+                  </ul>
+                </div>
+                <div class="row__col--5 website-section__col website-section__col--form">
+                  @@include('html/components/form-project.html')
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- website-section END -->
+          <!-- website-order BEGIN -->
+          <section class="website-order">
+            <div class="container container--size-md website-order__container">
+              <div class="row website-order__row">
+                <div class="row__col--6 website-order__col website-order__col--content">
+                  <div class="js-wow-counter website-order__content">
+                    <h2 class="wow fadeIn u-title fs-6 website-order__title">Заказать сайт-визитку легко</h2>
+                    <div class="wow fadeIn u-content website-order__text">
+                      <p>Вам необходимо сделать веб-сайт с минимальными затратами? Позвоните в&nbsp;компанию Celion! Команда специалистов разработает идеальную коммерческую площадку для вашего бизнеса, повышающую имидж компании, привлекающую новых клиентов и увеличивающую объем продаж!</p>
+                    </div>
+                    <footer class="wow fadeIn website-order__footer">
+                      <button type="button" class="btn btn--theme-accent-gradient btn--size-md website-order__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Заказать</span>
+                        </span>
+                      </button>
+                    </footer>
+                  </div>
+                </div>
+                <div class="row__col--6 website-order__col website-order__col--media">
+                  <picture class="wow fadeIn website-order__hero" data-wow-delay=".8s">
+                    <!--<source
+                      srcset="images/website-order-hero.webp"
+                      type="image/webp">-->
+                    <img
+                      src="images/website-order-hero.jpg"
+                      width="648"
+                      height="484"
+                      alt="Заказать сайт-визитку легко">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- website-order END -->
+          <!-- info BEGIN -->
+          <section class="info">
+            <div class="container container--size-md info__container">
+              <h2 class="wow fadeIn u-title fs-6 info__title" data-wow-delay=".2s">Чем сайт-визитка отличается от других веб-ресурсов?</h2>
+              <div class="wow fadeIn u-content info__text" data-wow-delay=".4s">
+                <p>Процесс создания сайта-визитки под ключ максимально прост по сравнению с более масштабными проектами (корпоративными порталами, интернет-магазинами и т. д.), реализация которых требует больше времени и технических ресурсов. Структура визитки состоит из 4-6 разделов:</p>
+              </div>
+              <div class="row info__list">
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Информативный первый экран</h3>
+                      <div class="u-content info-card__text">
+                        <p>Яркое УТП, характеризующее особенности вашего бизнеса, или дизайнерское решение, отражающее идею бизнеса и основные направления сайта</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">«Вопрос-Ответ»</h3>
+                      <div class="u-content info-card__text">
+                        <p>В блоке можно не только отвечать на наиболее частые вопросы, но и снять тревоги/возражения потенциального клиента. Например: ответить на вопросы о качестве, защите потребителя от подделки</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Слайдер</h3>
+                      <div class="u-content info-card__text">
+                        <p>В слайдерах размещают фото офиса, товара, баннеры с УТП на главной странице</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Меню</h3>
+                      <div class="u-content info-card__text">
+                        <p>Меню — важная составляющая любого сайта. Меню должно быть информативным, но не перегружать пользователя. Продуманная структура сайта и оптимальное меню — залог успеха</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Раздел новости, статьи</h3>
+                      <div class="u-content info-card__text">
+                        <p>Публикация новостей, акций, статей — важный источник информации о вас и вашем бизнесе. Расскажите о себе больше, станьте ближе к пользователю/клиенту</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Отзывы</h3>
+                      <div class="u-content info-card__text">
+                        <p>Красивый блок с отзывами на странице с возможность оставить новый. Отзывы, так же как и «Вопрос-Ответ» несет пользовательский опыт, помогая принять решение о покупке</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Формы конверсии</h3>
+                      <div class="u-content info-card__text">
+                        <p>Задать вопрос, купить, форма обратной связи, подписка на рассылку и прочее — целевых форм может быть множество, главное, не переборщить и грамотно распределить формы на нужных посадочных страницах</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 info__list-col">
+                  <article class="info-card info__list-card">
+                    <div class="info-card__header">
+                      <p class="info-card__counter"></p>
+                    </div>
+                    <div class="info-card__content">
+                      <h3 class="info-card__title">Портфолио</h3>
+                      <div class="u-content info-card__text">
+                        <p>Страница со списком выполненных проектов компании, поясняющая поставленные задачи и пути решения. На примере выполнения проекта вы убеждаете посетителя сделать заказ в вашей фирме</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- info END -->
+          <!-- why-we BEGIN -->
+          <section class="why-we">
+            <div class="container container--size-md why-we__container">
+              <h2 class="wow fadeIn u-title fs-6 why-we__title" data-wow-delay=".2s">Почему мы</h2>
+              <div class="wow fadeIn u-content why-we__text" data-wow-delay=".4s">
+                <p>По просьбе заказчика возможно создание раздела с корпоративной галереей, содержащей фотографии и видео. Визитка имеет простую и понятную структуру, в&nbsp;которой с первого взгляда разберется любой пользователь. Вся информация находится в&nbsp;пределах одного экрана. Разработка одностраничных сайтов требует минимального количества ресурсов и&nbsp;временных затрат. В плане расходов на реализацию проекта это – самое выгодное решение!</p>
+              </div>
+              <div class="row why-we__list">
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">150</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Сайтов создали</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">60%</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Остались на техподдержку</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 why-we__list-col">
+                  <article class="u-box why-we-card why-we__list-card">
+                    <div class="why-we-card__header">
+                      <h3 class="why-we-card__title">13</h3>
+                    </div>
+                    <div class="why-we-card__content">
+                      <div class="u-content why-we-card__text">
+                        <p>Лет на рынке</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- why-we END -->
+          <!-- price BEGIN -->
+          <section class="price">
+            <div class="container container--size-md price__container">
+              <h2 class="wow fadeIn u-title fs-6 price__title" data-wow-delay=".2s">Цены и решения</h2>
+              <div class="price__list">
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Landing Page на Wordpress</h3>
+                        <div class="u-content price-card__description">
+                          <p>Недорогой современный сайт</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Быстрый сайт на удобной бесплатной CMS</li>
+                          <li>Доступные цены</li>
+                          <li>Мобильная адаптация</li>
+                          <li>Легкая система управления</li>
+                          <li>Дизайн или шаблон</li>
+                          <li>Наполнение 10 страниц</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="u-title fs-6 price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 5 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Визитка на Bitrix</h3>
+                        <div class="u-content price-card__description">
+                          <p>Простые решения для малого бизнеса</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Дизайн или шаблон</li>
+                          <li>Наполнение 10 страниц</li>
+                          <li>Профессиональная система управления</li>
+                          <li>Мобильная верстка</li>
+                          <li>Удобная и простая CMS</li>
+                          <li>Надежная защита от взлома</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="u-title fs-6 price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 5 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Визитка на Joomla</h3>
+                        <div class="u-content price-card__description">
+                          <p>Разработка уникальных сайтов, которые выделят Вашу компанию среди конкурентов</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Дизайн или шаблон</li>
+                          <li>Наполнение 10 страниц</li>
+                          <li>Тысячи бесплатных расширений и шаблонов</li>
+                          <li>Удобная бесплатная CMS</li>
+                          <li>Широкий функционал</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="u-title fs-6 price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 5 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                <article class="price-card price__list-card">
+                  <div class="row price-card__inner">
+                    <div class="row__col price-card__col price-card__col--content">
+                      <div class="price-card__content">
+                        <h3 class="fs-6 price-card__title">Сайт-визитка с индивидуальным дизайном</h3>
+                        <div class="u-content price-card__description">
+                          <p>Функциональные и надежные решения для интернет маркетинга</p>
+                        </div>
+                        <ul class="list-approve price-card__info">
+                          <li>Наполнение 10 страниц</li>
+                          <li>CMS на Ваш выбор</li>
+                          <li>Отрисовка дизайна по вашему ТЗ</li>
+                          <li>Адаптивный дизайн</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row__col price-card__col price-card__col--footer">
+                      <footer class="price-card__footer">
+                        <p class="u-title fs-6 price-card__price">13 000 000 mln</p>
+                        <p class="price-card__date">/ от 10 рабочих дней</p>
+                        <button type="button" class="btn btn--theme-accent-gradient btn--size-md price-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Заказать</span>
+                          </span>
+                        </button>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- price END -->
+          <!-- appeal-choise BEGIN -->
+          @@include('html/components/appeal-choise.html')
+          <!-- appeal-choise END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>
