@@ -10,6 +10,7 @@
     font-size: var(--fs-18);
     @media (max-width: $md) {
       margin-bottom: var(--title-y-md);
+      font-size: 48rem;
     }
   }
   &__text {

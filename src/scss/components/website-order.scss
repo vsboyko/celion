@@ -44,6 +44,8 @@
     line-height: $lineHeight4;
     text-align: left;
     @media (max-width: $md) {
+      font-size: 20rem;
+      line-height: 1.1;
     }
   }
   &__subtitle {
@@ -82,5 +84,8 @@
     @extend %img-cover;
     height: 100%;
     border-radius: $radiusSemi;
+    @media (max-width: $md) {
+      padding-bottom: 50%;
+    }
   }
 }

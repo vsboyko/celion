@@ -9,6 +9,8 @@
     font-size: var(--fs-22);
     @media (max-width: $md) {
       margin-bottom: var(--title-y-md);
+      font-size: 34rem;
+      line-height: 1.1;
     }
   }
   &__text {
@@ -26,12 +28,16 @@
   &__list {
     margin-bottom: -100rem;
     counter-reset: infoCardsCounter;
+    @media (max-width: $md) {
+      margin-bottom: -40rem;
+    }
     &-col {
       margin-bottom: 100rem;
       counter-increment: infoCardsCounter;
       @media (max-width: $md) {
         max-width: 100%;
         flex-basis: 100%;
+        margin-bottom: 40rem;
       }
     }
     &-card {
